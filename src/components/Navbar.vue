@@ -48,7 +48,7 @@ const handleNavitemClick = (tab) => {
   <nav class="hidden lg:flex w-full sticky top-0 left-0 backdrop-blur-2xl z-50 py-1.5 border-b dark:border-darkBorderColor border-borderColor items-center justify-between dark:bg-darkBgColor transition-all duration-500">
 
     <div class="max-w-[1600px] mx-auto flex items-center justify-between w-full px-10">
-      <a href="#home" class="font-bold text-xl">
+      <a href="#home" class="font-bold text-xl text-black dark:text-white">
 <!--        <img :src="currentTheme === 'light' ? 'https://i.ibb.co.com/TYmXCgC/logo.png' : 'https://i.ibb.co.com/qx6pcB6/darklogo.png'" alt="logo/image" class="w-[60px]">-->
         Usman Ibraheem
       </a>
