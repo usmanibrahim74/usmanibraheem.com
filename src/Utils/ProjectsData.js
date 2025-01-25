@@ -40,7 +40,7 @@ export const projectsData = [
     },
     {
         name: 'Hospital Indoor Management System',
-        description: 'Hospital Indoor Management System is a web-based application that helps hospitals manage their indoor operations more efficiently. The system allows hospital staff to manage patient records, appointments, and other important information in one place. I worked on this project as a Front-End Developer, focusing on building a user-friendly interface and high-performance features. My role involved working closely with the design team to bring their vision to life and ensure a smooth user experience. It is the product of Boson Studio.',
+        description: 'Hospital Indoor Management System is a web-based application that helps hospitals manage their indoor operations more efficiently. The system allows hospital staff to manage patient records, appointments, and other important information in one place. I worked on this project as a Front-End Developer, focusing on building a user-friendly interface and high-performance features. It is the product of Boson Studio. Use these credentials to checkout the demo - Email: admin@bosonstudio.com, Password: password',
         thumbnail: '/hms.png',
         tags: [
             'VueJS',
@@ -49,6 +49,6 @@ export const projectsData = [
             'Shadcn',
         ],
         github: '',
-        live: 'demo.bosonstudio.com'
+        live: 'https://demo-hms.bosonstudio.com'
     }
 ]
