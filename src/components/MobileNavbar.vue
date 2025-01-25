@@ -48,7 +48,10 @@ const handleNavitemClick = (tab) => {
 <template>
   <nav class="flex lg:hidden w-full sticky top-0 left-0 backdrop-blur-2xl z-50 py-1.5 px-6 max-w-[1600px] mx-auto border-b dark:border-darkBorderColor border-borderColor items-center justify-between dark:bg-darkBgColor transition-all duration-500 justify-between">
 
-    <img :src="currentTheme === 'light' ? 'https://i.ibb.co.com/TYmXCgC/logo.png' : 'https://i.ibb.co.com/qx6pcB6/darklogo.png'" alt="logo/image" class="w-[50px]">
+    <a href="#home" class="font-bold text-xl text-black dark:text-white">
+      <!--        <img :src="currentTheme === 'light' ? 'https://i.ibb.co.com/TYmXCgC/logo.png' : 'https://i.ibb.co.com/qx6pcB6/darklogo.png'" alt="logo/image" class="w-[60px]">-->
+      Usman Ibraheem
+    </a>
 
     <div class="flex items-center gap-[10px]">
       <button @click="handleThemeChange" class="border overflow-hidden dark:border-darkTextColor border-gray-300 rounded-md h-[30px] py-2 px-2">
