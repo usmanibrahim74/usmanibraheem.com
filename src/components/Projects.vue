@@ -81,10 +81,10 @@ const toggleDescription = (projectName) => {
               <Icon icon="hugeicons:github-01" width="20" height="20" />
               Github
             </a>
-            <a v-else :class="[styleGuide.buttonOutline, !project.github && 'dark:bg-slate-800 dark:border-slate-500 cursor-not-allowed bg-gray-100 opacity-50']">
-              <Icon icon="hugeicons:github-01" width="20" height="20" />
-              Github
-            </a>
+<!--            <a v-else :class="[styleGuide.buttonOutline, !project.github && 'dark:bg-slate-800 dark:border-slate-500 cursor-not-allowed bg-gray-100 opacity-50']">-->
+<!--              <Icon icon="hugeicons:github-01" width="20" height="20" />-->
+<!--              Github-->
+<!--            </a>-->
           </div>
 
         </div>
