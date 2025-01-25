@@ -33,7 +33,7 @@ const handleActiveTab = (tab) => {
         <img alt="usman/image" src="/images/me-big.png" class="w-full rounded-md object-cover"/>
       </div>
 
-      <div>
+      <div class="pt-6 lg:pt-0">
         <div class="w-full grid grid-cols-3 relative rounded-full border dark:border-darkTextColor/40 border-borderColor">
 
           <div :class="activeTab === 'about_me' ?'translate-x-[2%]' : activeTab === 'education' ? 'translate-x-[100%]' : 'translate-x-[201.4%]'" class="bg-highlightPrimary/10 dark:bg-highlightPrimary/50 absolute h-[90%] sm:h-[85%] rounded-full top-[50%] w-[33%] transform transition-all duration-700 translate-y-[-50%]"></div>
