@@ -112,7 +112,7 @@ onUnmounted(() => {
       </p>
 
       <div class="flex flex-col sm:flex-row sm:items-center gap-[15px] mt-8">
-        <a href="https://zcal.co/asfak00/discuss30" target="_blank" :class="styleGuide.buttonFill" class="py-2.5 w-max">
+        <a href="https://zcal.co/usmanibraheem/meeting" target="_blank" :class="styleGuide.buttonFill" class="py-2.5 w-max">
           <Icon icon="hugeicons:calendar-03" width="22" height="22"/>
           Schedule a meeting
         </a>
