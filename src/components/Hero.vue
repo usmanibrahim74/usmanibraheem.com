@@ -12,7 +12,7 @@ const props = defineProps({
   }
 })
 
-const titleText = ref("Full Stack Web Developer");
+const titleText = ref("Full Stack Developer");
 const titleKey = ref(0);
 
 const icons = [
@@ -59,8 +59,8 @@ onMounted(() => {
   startIconAnimation()
 
   const placeholderTexts = [
-    'Front-End Web Developer',
-    'Back-End Web Developer',
+    'Front-End Developer',
+    'Back-End Developer',
     'React Developer',
     'Javascript Developer',
     'Vue Developer',
@@ -87,7 +87,7 @@ onUnmounted(() => {
 
 <template>
   <Layout id="home"
-          class="pt-10 lg:pt-0 min-h-[90vh] flex-col lg:flex-row flex items-center justify-between relative dark:bg-darkBgColor transition-all duration-500 z-0 gap-12 sm:gap-16 lg:gap-0">
+          class="pt-6 lg:pt-0 min-h-[90vh] flex-col lg:flex-row flex items-center justify-between relative dark:bg-darkBgColor transition-all duration-500 z-0 gap-12 sm:gap-16 lg:gap-0">
     <!--  up shadow  -->
     <div
         class="bg-highlightPrimary absolute top-[30px] left-[80px] blur-[200px] dark:w-[250px] dark:h-[250px] dark:blur-[180px] w-[200px] h-[200px] rounded-full z-[-1]"></div>
@@ -100,7 +100,7 @@ onUnmounted(() => {
       <transition name="title-transition">
         <h1
             :key="titleKey"
-            class="text-[2.5rem] sm:text-[3rem] overflow-hidden leading-[45px] font-[700] text-textColor sm:leading-[60px] dark:text-darkTextColor">
+            class="text-3xl sm:text-[3rem] text-nowrap overflow-hidden leading-[45px] font-[700] text-textColor sm:leading-[60px] dark:text-darkTextColor">
           {{ titleText }}
         </h1>
       </transition>
@@ -136,11 +136,11 @@ onUnmounted(() => {
         class="bg-highlightColor absolute bottom-[30px] left-[50%] transform translate-x-[-50%] blur-[180px] w-[250px] dark:w-[280px] dark:h-[280px] dark:blur-[200px] h-[250px] rounded-full z-[-1]"></div>
 
     <!--  image   -->
-    <div class="w-[80%] sm:w-[90%] lg:w-[40%] flex flex-col items-end sm:items-center lg:items-end relative">
+    <div class="w-full sm:w-[90%] lg:w-[40%] flex flex-col items-end sm:items-center lg:items-end relative">
 
       <!--   projects card   -->
       <div
-          class="bg-white dark:bg-slate-900 animation-bounce rounded-md py-1 sm:py-2.5 px-5 sm:px-11 absolute shadow-sm top-[80px] sm:top-[150px] left-[-50px] sm:left-[0px] w-max flex transition-all duration-300 flex-col items-center justify-center">
+          class="bg-white dark:bg-slate-900 animation-bounce rounded-md py-1 sm:py-2.5 px-5 sm:px-11 absolute shadow-sm top-[20px] sm:top-[150px] right-[-20px] sm:left-[0px] w-max flex transition-all duration-300 flex-col items-center justify-center">
         <h6 class="text-[1.2rem] sm:text-[1.8rem] font-[600] text-highlightPrimary leading-[35px]">50+</h6>
         <p class="text-disableColor dark:text-darkDisableColor text-[0.7rem] sm:text-[0.9rem]">Satisfied clients</p>
       </div>
@@ -152,7 +152,7 @@ onUnmounted(() => {
         <p class="text-disableColor dark:text-darkDisableColor text-[0.7rem] sm:text-[0.9rem]">Years of experience</p>
       </div>
 
-      <div class="rounded-full border-4 border-black dark:border-white overflow-hidden px-4 pt-4 w-[450px] h-[450px] flex items-end">
+      <div class="rounded-full border-4 border-black dark:border-white overflow-hidden px-4 pt-4 size-full max-w-[450px] max-h-[450px] flex items-end">
         <img alt="usman/image" src="/images/me.png"
              class="w-full"/>
       </div>

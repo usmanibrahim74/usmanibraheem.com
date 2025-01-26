@@ -58,15 +58,15 @@ const handleActiveTab = (tab) => {
               ? '-translate-x-full opacity-0'
               : 'translate-x-full opacity-0'"
           >
-            <div v-if="activeTab === 'about_me'" key="about_me" class="pt-6 px-2">
+            <div v-if="activeTab === 'about_me'" key="about_me" class="pt-6 sm:px-2">
               <AboutMe/>
             </div>
 
-            <div v-else-if="activeTab === 'education'" key="education" class="pt-6 px-2">
+            <div v-else-if="activeTab === 'education'" key="education" class="pt-6 sm:px-2">
               <Education/>
             </div>
 
-            <div v-else key="hobby" class="pt-6 px-2">
+            <div v-else key="hobby" class="pt-6 sm:px-2">
               <Hobby/>
             </div>
           </transition>
