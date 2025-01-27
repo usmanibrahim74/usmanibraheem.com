@@ -48,7 +48,7 @@ watch(()=> activeTab.value,
     <div class="mt-8 grid grid-cols-2 sm:grid-cols-4 lg:grid-cols-8 gap-[15px]">
       <div v-for="skill in filteredSkills">
         <div class="border-[2px] border-dashed border-borderColor/80 hover:border-highlightPrimary transition-all duration-300 cursor-pointer rounded-md px-3 py-4 flex flex-col items-center justify-center group dark:border-darkBorderColor dark:hover:border-highlightPrimary">
-          <img alt="icon" class="h-[32px] object-cover rounded-md group-hover:scale-[1.2] transition-all duration-300" v-if="skill.icon.startsWith('https')" :src="skill.icon"/>
+          <img alt="icon" class="h-[32px] object-cover rounded-md group-hover:scale-[1.2] transition-all duration-300" v-if="skill.icon.startsWith('https') || skill.icon.startsWith('/images')" :src="skill.icon"/>
           <div v-html="skill.icon" v-else class="w-[32px] h-[32px] group-hover:scale-[1.2] transition-all duration-300"></div>
           <p class="text-[1rem] dark:text-darkTextColor capitalize mt-2 font-[500] text-textColor">{{skill.name}}</p>
         </div>
