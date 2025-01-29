@@ -151,7 +151,681 @@
     </script>
 </head>
 <body class="light">
-<div id="app"></div>
+<div id="app" data-v-app="">
+    <style>@import"https://fonts.googleapis.com/css2?family=Heebo:wght@100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap";*,:before,:after{--tw-border-spacing-x: 0;--tw-border-spacing-y: 0;--tw-translate-x: 0;--tw-translate-y: 0;--tw-rotate: 0;--tw-skew-x: 0;--tw-skew-y: 0;--tw-scale-x: 1;--tw-scale-y: 1;--tw-pan-x: ;--tw-pan-y: ;--tw-pinch-zoom: ;--tw-scroll-snap-strictness: proximity;--tw-gradient-from-position: ;--tw-gradient-via-position: ;--tw-gradient-to-position: ;--tw-ordinal: ;--tw-slashed-zero: ;--tw-numeric-figure: ;--tw-numeric-spacing: ;--tw-numeric-fraction: ;--tw-ring-inset: ;--tw-ring-offset-width: 0px;--tw-ring-offset-color: #fff;--tw-ring-color: rgb(59 130 246 / .5);--tw-ring-offset-shadow: 0 0 #0000;--tw-ring-shadow: 0 0 #0000;--tw-shadow: 0 0 #0000;--tw-shadow-colored: 0 0 #0000;--tw-blur: ;--tw-brightness: ;--tw-contrast: ;--tw-grayscale: ;--tw-hue-rotate: ;--tw-invert: ;--tw-saturate: ;--tw-sepia: ;--tw-drop-shadow: ;--tw-backdrop-blur: ;--tw-backdrop-brightness: ;--tw-backdrop-contrast: ;--tw-backdrop-grayscale: ;--tw-backdrop-hue-rotate: ;--tw-backdrop-invert: ;--tw-backdrop-opacity: ;--tw-backdrop-saturate: ;--tw-backdrop-sepia: ;--tw-contain-size: ;--tw-contain-layout: ;--tw-contain-paint: ;--tw-contain-style: }::backdrop{--tw-border-spacing-x: 0;--tw-border-spacing-y: 0;--tw-translate-x: 0;--tw-translate-y: 0;--tw-rotate: 0;--tw-skew-x: 0;--tw-skew-y: 0;--tw-scale-x: 1;--tw-scale-y: 1;--tw-pan-x: ;--tw-pan-y: ;--tw-pinch-zoom: ;--tw-scroll-snap-strictness: proximity;--tw-gradient-from-position: ;--tw-gradient-via-position: ;--tw-gradient-to-position: ;--tw-ordinal: ;--tw-slashed-zero: ;--tw-numeric-figure: ;--tw-numeric-spacing: ;--tw-numeric-fraction: ;--tw-ring-inset: ;--tw-ring-offset-width: 0px;--tw-ring-offset-color: #fff;--tw-ring-color: rgb(59 130 246 / .5);--tw-ring-offset-shadow: 0 0 #0000;--tw-ring-shadow: 0 0 #0000;--tw-shadow: 0 0 #0000;--tw-shadow-colored: 0 0 #0000;--tw-blur: ;--tw-brightness: ;--tw-contrast: ;--tw-grayscale: ;--tw-hue-rotate: ;--tw-invert: ;--tw-saturate: ;--tw-sepia: ;--tw-drop-shadow: ;--tw-backdrop-blur: ;--tw-backdrop-brightness: ;--tw-backdrop-contrast: ;--tw-backdrop-grayscale: ;--tw-backdrop-hue-rotate: ;--tw-backdrop-invert: ;--tw-backdrop-opacity: ;--tw-backdrop-saturate: ;--tw-backdrop-sepia: ;--tw-contain-size: ;--tw-contain-layout: ;--tw-contain-paint: ;--tw-contain-style: }*,:before,:after{box-sizing:border-box;border-width:0;border-style:solid;border-color:#e5e7eb}:before,:after{--tw-content: ""}html,:host{line-height:1.5;-webkit-text-size-adjust:100%;-moz-tab-size:4;-o-tab-size:4;tab-size:4;font-family:ui-sans-serif,system-ui,sans-serif,"Apple Color Emoji","Segoe UI Emoji",Segoe UI Symbol,"Noto Color Emoji";font-feature-settings:normal;font-variation-settings:normal;-webkit-tap-highlight-color:transparent}body{margin:0;line-height:inherit}hr{height:0;color:inherit;border-top-width:1px}abbr:where([title]){-webkit-text-decoration:underline dotted;text-decoration:underline dotted}h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight:inherit}a{color:inherit;text-decoration:inherit}b,strong{font-weight:bolder}code,kbd,samp,pre{font-family:ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,Liberation Mono,Courier New,monospace;font-feature-settings:normal;font-variation-settings:normal;font-size:1em}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}table{text-indent:0;border-color:inherit;border-collapse:collapse}button,input,optgroup,select,textarea{font-family:inherit;font-feature-settings:inherit;font-variation-settings:inherit;font-size:100%;font-weight:inherit;line-height:inherit;letter-spacing:inherit;color:inherit;margin:0;padding:0}button,select{text-transform:none}button,input:where([type=button]),input:where([type=reset]),input:where([type=submit]){-webkit-appearance:button;background-color:transparent;background-image:none}:-moz-focusring{outline:auto}:-moz-ui-invalid{box-shadow:none}progress{vertical-align:baseline}::-webkit-inner-spin-button,::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}::-webkit-search-decoration{-webkit-appearance:none}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}summary{display:list-item}blockquote,dl,dd,h1,h2,h3,h4,h5,h6,hr,figure,p,pre{margin:0}fieldset{margin:0;padding:0}legend{padding:0}ol,ul,menu{list-style:none;margin:0;padding:0}dialog{padding:0}textarea{resize:vertical}input::-moz-placeholder,textarea::-moz-placeholder{opacity:1;color:#9ca3af}input::placeholder,textarea::placeholder{opacity:1;color:#9ca3af}button,[role=button]{cursor:pointer}:disabled{cursor:default}img,svg,video,canvas,audio,iframe,embed,object{display:block;vertical-align:middle}img,video{max-width:100%;height:auto}[hidden]:where(:not([hidden=until-found])){display:none}.fixed{position:fixed}.absolute{position:absolute}.relative{position:relative}.sticky{position:sticky}.bottom-0{bottom:0}.bottom-\[20px\]{bottom:20px}.bottom-\[30px\]{bottom:30px}.left-0{left:0}.left-\[-30px\]{left:-30px}.left-\[100px\]{left:100px}.left-\[50\%\]{left:50%}.left-\[80px\]{left:80px}.right-0{right:0}.right-\[-20px\]{right:-20px}.top-0{top:0}.top-\[20px\]{top:20px}.top-\[30px\]{top:30px}.top-\[50\%\]{top:50%}.z-0{z-index:0}.z-20{z-index:20}.z-50{z-index:50}.z-\[-1\]{z-index:-1}.mx-auto{margin-left:auto;margin-right:auto}.my-5{margin-top:1.25rem;margin-bottom:1.25rem}.ml-1{margin-left:.25rem}.ml-4{margin-left:1rem}.mt-0\.5{margin-top:.125rem}.mt-1{margin-top:.25rem}.mt-10{margin-top:2.5rem}.mt-12{margin-top:3rem}.mt-2{margin-top:.5rem}.mt-2\.5{margin-top:.625rem}.mt-3{margin-top:.75rem}.mt-5{margin-top:1.25rem}.mt-8{margin-top:2rem}.flex{display:flex}.grid{display:grid}.hidden{display:none}.size-full{width:100%;height:100%}.h-\[100\%\]{height:100%}.h-\[150px\]{height:150px}.h-\[180px\]{height:180px}.h-\[200px\]{height:200px}.h-\[250px\]{height:250px}.h-\[2px\]{height:2px}.h-\[30px\]{height:30px}.h-\[32px\]{height:32px}.h-\[3px\]{height:3px}.h-\[42px\]{height:42px}.h-\[450px\]{height:450px}.h-\[45px\]{height:45px}.h-\[60px\]{height:60px}.h-\[85\%\]{height:85%}.h-\[90\%\]{height:90%}.h-auto{height:auto}.h-full{height:100%}.h-max{height:-moz-max-content;height:max-content}.h-screen{height:100vh}.max-h-\[450px\]{max-height:450px}.min-h-\[90vh\]{min-height:90vh}.w-\[110px\]{width:110px}.w-\[120px\]{width:120px}.w-\[200px\]{width:200px}.w-\[25\%\]{width:25%}.w-\[250px\]{width:250px}.w-\[32px\]{width:32px}.w-\[33\%\]{width:33%}.w-\[45px\]{width:45px}.w-\[50\%\]{width:50%}.w-\[60px\]{width:60px}.w-\[70\%\]{width:70%}.w-\[80\%\]{width:80%}.w-\[80px\]{width:80px}.w-\[90\%\]{width:90%}.w-full{width:100%}.w-max{width:-moz-max-content;width:max-content}.min-w-\[60px\]{min-width:60px}.min-w-max{min-width:-moz-max-content;min-width:max-content}.max-w-\[1600px\]{max-width:1600px}.max-w-\[450px\]{max-width:450px}.max-w-full{max-width:100%}.-translate-x-full{--tw-translate-x: -100%;transform:translate(var(--tw-translate-x),var(--tw-translate-y)) rotate(var(--tw-rotate)) skew(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}.translate-x-\[-50\%\]{--tw-translate-x: -50%;transform:translate(var(--tw-translate-x),var(--tw-translate-y)) rotate(var(--tw-rotate)) skew(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}.translate-x-\[100\%\]{--tw-translate-x: 100%;transform:translate(var(--tw-translate-x),var(--tw-translate-y)) rotate(var(--tw-rotate)) skew(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}.translate-x-\[105\%\]{--tw-translate-x: 105%;transform:translate(var(--tw-translate-x),var(--tw-translate-y)) rotate(var(--tw-rotate)) skew(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}.translate-x-\[158\%\]{--tw-translate-x: 158%;transform:translate(var(--tw-translate-x),var(--tw-translate-y)) rotate(var(--tw-rotate)) skew(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}.translate-x-\[2\%\]{--tw-translate-x: 2%;transform:translate(var(--tw-translate-x),var(--tw-translate-y)) rotate(var(--tw-rotate)) skew(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}.translate-x-\[200\%\]{--tw-translate-x: 200%;transform:translate(var(--tw-translate-x),var(--tw-translate-y)) rotate(var(--tw-rotate)) skew(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}.translate-x-\[201\.4\%\]{--tw-translate-x: 201.4%;transform:translate(var(--tw-translate-x),var(--tw-translate-y)) rotate(var(--tw-rotate)) skew(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}.translate-x-\[209\%\]{--tw-translate-x: 209%;transform:translate(var(--tw-translate-x),var(--tw-translate-y)) rotate(var(--tw-rotate)) skew(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}.translate-x-\[279\%\]{--tw-translate-x: 279%;transform:translate(var(--tw-translate-x),var(--tw-translate-y)) rotate(var(--tw-rotate)) skew(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}.translate-x-\[73\%\]{--tw-translate-x: 73%;transform:translate(var(--tw-translate-x),var(--tw-translate-y)) rotate(var(--tw-rotate)) skew(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}.translate-x-full{--tw-translate-x: 100%;transform:translate(var(--tw-translate-x),var(--tw-translate-y)) rotate(var(--tw-rotate)) skew(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}.translate-y-0{--tw-translate-y: 0px;transform:translate(var(--tw-translate-x),var(--tw-translate-y)) rotate(var(--tw-rotate)) skew(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}.translate-y-\[-24px\]{--tw-translate-y: -24px;transform:translate(var(--tw-translate-x),var(--tw-translate-y)) rotate(var(--tw-rotate)) skew(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}.translate-y-\[-29px\]{--tw-translate-y: -29px;transform:translate(var(--tw-translate-x),var(--tw-translate-y)) rotate(var(--tw-rotate)) skew(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}.translate-y-\[-40px\]{--tw-translate-y: -40px;transform:translate(var(--tw-translate-x),var(--tw-translate-y)) rotate(var(--tw-rotate)) skew(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}.translate-y-\[-50\%\]{--tw-translate-y: -50%;transform:translate(var(--tw-translate-x),var(--tw-translate-y)) rotate(var(--tw-rotate)) skew(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}.translate-y-\[-6px\]{--tw-translate-y: -6px;transform:translate(var(--tw-translate-x),var(--tw-translate-y)) rotate(var(--tw-rotate)) skew(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}.translate-y-\[20px\]{--tw-translate-y: 20px;transform:translate(var(--tw-translate-x),var(--tw-translate-y)) rotate(var(--tw-rotate)) skew(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}.transform{transform:translate(var(--tw-translate-x),var(--tw-translate-y)) rotate(var(--tw-rotate)) skew(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}.cursor-not-allowed{cursor:not-allowed}.cursor-pointer{cursor:pointer}.list-disc{list-style-type:disc}.grid-cols-1{grid-template-columns:repeat(1,minmax(0,1fr))}.grid-cols-2{grid-template-columns:repeat(2,minmax(0,1fr))}.grid-cols-3{grid-template-columns:repeat(3,minmax(0,1fr))}.grid-cols-4{grid-template-columns:repeat(4,minmax(0,1fr))}.flex-col{flex-direction:column}.flex-wrap{flex-wrap:wrap}.items-end{align-items:flex-end}.items-center{align-items:center}.justify-center{justify-content:center}.justify-between{justify-content:space-between}.gap-12{gap:3rem}.gap-6{gap:1.5rem}.gap-\[0px\]{gap:0px}.gap-\[10px\]{gap:10px}.gap-\[15px\]{gap:15px}.gap-\[20px\]{gap:20px}.gap-\[35px\]{gap:35px}.gap-\[5px\]{gap:5px}.gap-\[8px\]{gap:8px}.overflow-hidden{overflow:hidden}.overflow-x-auto{overflow-x:auto}.overscroll-auto{overscroll-behavior:auto}.text-nowrap{text-wrap:nowrap}.rounded-2xl{border-radius:1rem}.rounded-full{border-radius:9999px}.rounded-md{border-radius:.375rem}.rounded-t-md{border-top-left-radius:.375rem;border-top-right-radius:.375rem}.border{border-width:1px}.border-4{border-width:4px}.border-\[2px\]{border-width:2px}.border-b{border-bottom-width:1px}.border-l-2{border-left-width:2px}.border-t{border-top-width:1px}.border-dashed{border-style:dashed}.border-black{--tw-border-opacity: 1;border-color:rgb(0 0 0 / var(--tw-border-opacity, 1))}.border-borderColor{--tw-border-opacity: 1;border-color:rgb(233 233 233 / var(--tw-border-opacity, 1))}.border-borderColor\/80{border-color:#e9e9e9cc}.border-gray-300{--tw-border-opacity: 1;border-color:rgb(209 213 219 / var(--tw-border-opacity, 1))}.bg-gray-100{--tw-bg-opacity: 1;background-color:rgb(243 244 246 / var(--tw-bg-opacity, 1))}.bg-highlightColor{--tw-bg-opacity: 1;background-color:rgb(165 118 227 / var(--tw-bg-opacity, 1))}.bg-highlightPrimary{--tw-bg-opacity: 1;background-color:rgb(4 181 221 / var(--tw-bg-opacity, 1))}.bg-highlightPrimary\/10{background-color:#04b5dd1a}.bg-textColor{--tw-bg-opacity: 1;background-color:rgb(15 23 42 / var(--tw-bg-opacity, 1))}.bg-white{--tw-bg-opacity: 1;background-color:rgb(255 255 255 / var(--tw-bg-opacity, 1))}.bg-gradient-to-b{background-image:linear-gradient(to bottom,var(--tw-gradient-stops))}.bg-gradient-to-r{background-image:linear-gradient(to right,var(--tw-gradient-stops))}.from-\[\#04B5DD\]{--tw-gradient-from: #04B5DD var(--tw-gradient-from-position);--tw-gradient-to: rgb(4 181 221 / 0) var(--tw-gradient-to-position);--tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to)}.from-black{--tw-gradient-from: #000 var(--tw-gradient-from-position);--tw-gradient-to: rgb(0 0 0 / 0) var(--tw-gradient-to-position);--tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to)}.from-black\/10{--tw-gradient-from: rgb(0 0 0 / .1) var(--tw-gradient-from-position);--tw-gradient-to: rgb(0 0 0 / 0) var(--tw-gradient-to-position);--tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to)}.from-white\/50{--tw-gradient-from: rgb(255 255 255 / .5) var(--tw-gradient-from-position);--tw-gradient-to: rgb(255 255 255 / 0) var(--tw-gradient-to-position);--tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to)}.to-black\/40{--tw-gradient-to: rgb(0 0 0 / .4) var(--tw-gradient-to-position)}.to-black\/70{--tw-gradient-to: rgb(0 0 0 / .7) var(--tw-gradient-to-position)}.to-highlightColor{--tw-gradient-to: #A576E3 var(--tw-gradient-to-position)}.to-white{--tw-gradient-to: #fff var(--tw-gradient-to-position)}.object-cover{-o-object-fit:cover;object-fit:cover}.p-10{padding:2.5rem}.p-2{padding:.5rem}.p-4{padding:1rem}.px-10{padding-left:2.5rem;padding-right:2.5rem}.px-2{padding-left:.5rem;padding-right:.5rem}.px-3{padding-left:.75rem;padding-right:.75rem}.px-4{padding-left:1rem;padding-right:1rem}.px-5{padding-left:1.25rem;padding-right:1.25rem}.px-6{padding-left:1.5rem;padding-right:1.5rem}.py-1{padding-top:.25rem;padding-bottom:.25rem}.py-1\.5{padding-top:.375rem;padding-bottom:.375rem}.py-2{padding-top:.5rem;padding-bottom:.5rem}.py-2\.5{padding-top:.625rem;padding-bottom:.625rem}.py-3\.5{padding-top:.875rem;padding-bottom:.875rem}.py-4{padding-top:1rem;padding-bottom:1rem}.py-5{padding-top:1.25rem;padding-bottom:1.25rem}.py-6{padding-top:1.5rem;padding-bottom:1.5rem}.pb-0{padding-bottom:0}.pb-12{padding-bottom:3rem}.pl-16{padding-left:4rem}.pl-3{padding-left:.75rem}.pl-4{padding-left:1rem}.pl-8{padding-left:2rem}.pt-0{padding-top:0}.pt-10{padding-top:2.5rem}.pt-12{padding-top:3rem}.pt-16{padding-top:4rem}.pt-4{padding-top:1rem}.pt-6{padding-top:1.5rem}.pt-8{padding-top:2rem}.text-center{text-align:center}.text-3xl{font-size:1.875rem;line-height:2.25rem}.text-\[0\.7rem\]{font-size:.7rem}.text-\[0\.8rem\]{font-size:.8rem}.text-\[0\.9rem\]{font-size:.9rem}.text-\[1\.1rem\]{font-size:1.1rem}.text-\[1\.2rem\]{font-size:1.2rem}.text-\[1\.3rem\]{font-size:1.3rem}.text-\[1\.5rem\]{font-size:1.5rem}.text-\[1rem\]{font-size:1rem}.text-\[2\.2rem\]{font-size:2.2rem}.text-xl{font-size:1.25rem;line-height:1.75rem}.font-\[400\]{font-weight:400}.font-\[500\]{font-weight:500}.font-\[600\]{font-weight:600}.font-\[700\],.font-bold{font-weight:700}.capitalize{text-transform:capitalize}.leading-\[23px\]{line-height:23px}.leading-\[35px\]{line-height:35px}.leading-\[45px\]{line-height:45px}.\!text-highlightPrimary{--tw-text-opacity: 1 !important;color:rgb(4 181 221 / var(--tw-text-opacity, 1))!important}.text-black{--tw-text-opacity: 1;color:rgb(0 0 0 / var(--tw-text-opacity, 1))}.text-darkDisableColor{--tw-text-opacity: 1;color:rgb(171 194 211 / var(--tw-text-opacity, 1))}.text-disableColor{--tw-text-opacity: 1;color:rgb(84 84 84 / var(--tw-text-opacity, 1))}.text-gray-400{--tw-text-opacity: 1;color:rgb(156 163 175 / var(--tw-text-opacity, 1))}.text-highlightColor{--tw-text-opacity: 1;color:rgb(165 118 227 / var(--tw-text-opacity, 1))}.text-highlightPrimary{--tw-text-opacity: 1;color:rgb(4 181 221 / var(--tw-text-opacity, 1))}.text-highlightPrimary\/80{color:#04b5ddcc}.text-textColor{--tw-text-opacity: 1;color:rgb(15 23 42 / var(--tw-text-opacity, 1))}.text-white{--tw-text-opacity: 1;color:rgb(255 255 255 / var(--tw-text-opacity, 1))}.underline{text-decoration-line:underline}.opacity-0{opacity:0}.opacity-100{opacity:1}.opacity-50{opacity:.5}.shadow{--tw-shadow: 0 1px 3px 0 rgb(0 0 0 / .1), 0 1px 2px -1px rgb(0 0 0 / .1);--tw-shadow-colored: 0 1px 3px 0 var(--tw-shadow-color), 0 1px 2px -1px var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000),var(--tw-ring-shadow, 0 0 #0000),var(--tw-shadow)}.shadow-sm{--tw-shadow: 0 1px 2px 0 rgb(0 0 0 / .05);--tw-shadow-colored: 0 1px 2px 0 var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000),var(--tw-ring-shadow, 0 0 #0000),var(--tw-shadow)}.blur-\[180px\]{--tw-blur: blur(180px);filter:var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow)}.blur-\[200px\]{--tw-blur: blur(200px);filter:var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow)}.filter{filter:var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow)}.backdrop-blur-2xl{--tw-backdrop-blur: blur(40px);-webkit-backdrop-filter:var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);backdrop-filter:var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia)}.transition{transition-property:color,background-color,border-color,text-decoration-color,fill,stroke,opacity,box-shadow,transform,filter,-webkit-backdrop-filter;transition-property:color,background-color,border-color,text-decoration-color,fill,stroke,opacity,box-shadow,transform,filter,backdrop-filter;transition-property:color,background-color,border-color,text-decoration-color,fill,stroke,opacity,box-shadow,transform,filter,backdrop-filter,-webkit-backdrop-filter;transition-timing-function:cubic-bezier(.4,0,.2,1);transition-duration:.15s}.transition-all{transition-property:all;transition-timing-function:cubic-bezier(.4,0,.2,1);transition-duration:.15s}.duration-300{transition-duration:.3s}.duration-500{transition-duration:.5s}.duration-700{transition-duration:.7s}.ease-out{transition-timing-function:cubic-bezier(0,0,.2,1)}*{margin:0;padding:0;box-sizing:border-box;font-family:Inter,serif;scroll-behavior:smooth}.animation-bounce{animation:bounce 2s infinite ease-in-out}@keyframes bounce{0%,to{transform:translateY(0)}50%{transform:translateY(-5px)}}.animation-bounce2{animation:bounce2 2.3s infinite ease-in-out}@keyframes bounce2{0%,to{transform:translateY(0)}50%{transform:translateY(-5px)}}.before\:absolute:before{content:var(--tw-content);position:absolute}.before\:left-\[-5\.5px\]:before{content:var(--tw-content);left:-5.5px}.before\:top-0:before{content:var(--tw-content);top:0}.before\:h-\[10px\]:before{content:var(--tw-content);height:10px}.before\:w-\[10px\]:before{content:var(--tw-content);width:10px}.before\:rounded-full:before{content:var(--tw-content);border-radius:9999px}.before\:bg-gray-300:before{content:var(--tw-content);--tw-bg-opacity: 1;background-color:rgb(209 213 219 / var(--tw-bg-opacity, 1))}.hover\:scale-\[1\.1\]:hover{--tw-scale-x: 1.1;--tw-scale-y: 1.1;transform:translate(var(--tw-translate-x),var(--tw-translate-y)) rotate(var(--tw-rotate)) skew(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}.hover\:border-highlightPrimary:hover{--tw-border-opacity: 1;border-color:rgb(4 181 221 / var(--tw-border-opacity, 1))}.hover\:bg-gray-100:hover{--tw-bg-opacity: 1;background-color:rgb(243 244 246 / var(--tw-bg-opacity, 1))}.hover\:bg-textColor\/90:hover{background-color:#0f172ae6}.hover\:from-highlightColor:hover{--tw-gradient-from: #A576E3 var(--tw-gradient-from-position);--tw-gradient-to: rgb(165 118 227 / 0) var(--tw-gradient-to-position);--tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to)}.hover\:to-\[\#04B5DD\]:hover{--tw-gradient-to: #04B5DD var(--tw-gradient-to-position)}.hover\:text-highlightPrimary:hover{--tw-text-opacity: 1;color:rgb(4 181 221 / var(--tw-text-opacity, 1))}.group:hover .group-hover\:z-10{z-index:10}.group:hover .group-hover\:z-20{z-index:20}.group:hover .group-hover\:translate-y-\[-50\%\]{--tw-translate-y: -50%;transform:translate(var(--tw-translate-x),var(--tw-translate-y)) rotate(var(--tw-rotate)) skew(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}.group:hover .group-hover\:scale-\[1\.1\]{--tw-scale-x: 1.1;--tw-scale-y: 1.1;transform:translate(var(--tw-translate-x),var(--tw-translate-y)) rotate(var(--tw-rotate)) skew(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}.group:hover .group-hover\:scale-\[1\.2\]{--tw-scale-x: 1.2;--tw-scale-y: 1.2;transform:translate(var(--tw-translate-x),var(--tw-translate-y)) rotate(var(--tw-rotate)) skew(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}.group:hover .group-hover\:opacity-100{opacity:1}.group:hover .group-hover\:drop-shadow-\[0_4px_4px_rgba\(256\,256\,256\,0\.1\)\]{--tw-drop-shadow: drop-shadow(0 4px 4px rgba(256,256,256,.1));filter:var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow)}.dark\:z-10:is(.dark *){z-index:10}.dark\:h-\[250px\]:is(.dark *){height:250px}.dark\:h-\[280px\]:is(.dark *){height:280px}.dark\:w-\[250px\]:is(.dark *){width:250px}.dark\:w-\[280px\]:is(.dark *){width:280px}.dark\:border-darkBorderColor:is(.dark *){--tw-border-opacity: 1;border-color:rgb(51 65 85 / var(--tw-border-opacity, 1))}.dark\:border-darkTextColor:is(.dark *){--tw-border-opacity: 1;border-color:rgb(217 238 255 / var(--tw-border-opacity, 1))}.dark\:border-darkTextColor\/40:is(.dark *){border-color:#d9eeff66}.dark\:border-slate-500:is(.dark *){--tw-border-opacity: 1;border-color:rgb(100 116 139 / var(--tw-border-opacity, 1))}.dark\:border-white:is(.dark *){--tw-border-opacity: 1;border-color:rgb(255 255 255 / var(--tw-border-opacity, 1))}.dark\:bg-darkBgColor:is(.dark *){--tw-bg-opacity: 1;background-color:rgb(2 6 23 / var(--tw-bg-opacity, 1))}.dark\:bg-darkTextColor:is(.dark *){--tw-bg-opacity: 1;background-color:rgb(217 238 255 / var(--tw-bg-opacity, 1))}.dark\:bg-highlightPrimary\/50:is(.dark *){background-color:#04b5dd80}.dark\:bg-slate-800:is(.dark *){--tw-bg-opacity: 1;background-color:rgb(30 41 59 / var(--tw-bg-opacity, 1))}.dark\:bg-slate-900:is(.dark *){--tw-bg-opacity: 1;background-color:rgb(15 23 42 / var(--tw-bg-opacity, 1))}.dark\:from-darkBgColor\/50:is(.dark *){--tw-gradient-from: rgb(2 6 23 / .5) var(--tw-gradient-from-position);--tw-gradient-to: rgb(2 6 23 / 0) var(--tw-gradient-to-position);--tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to)}.dark\:to-darkBgColor:is(.dark *){--tw-gradient-to: #020617 var(--tw-gradient-to-position)}.dark\:text-darkDisableColor:is(.dark *){--tw-text-opacity: 1;color:rgb(171 194 211 / var(--tw-text-opacity, 1))}.dark\:text-darkTextColor:is(.dark *){--tw-text-opacity: 1;color:rgb(217 238 255 / var(--tw-text-opacity, 1))}.dark\:text-slate-800:is(.dark *){--tw-text-opacity: 1;color:rgb(30 41 59 / var(--tw-text-opacity, 1))}.dark\:text-white:is(.dark *){--tw-text-opacity: 1;color:rgb(255 255 255 / var(--tw-text-opacity, 1))}.dark\:blur-\[180px\]:is(.dark *){--tw-blur: blur(180px);filter:var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow)}.dark\:blur-\[200px\]:is(.dark *){--tw-blur: blur(200px);filter:var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow)}.dark\:hover\:border-highlightPrimary:hover:is(.dark *){--tw-border-opacity: 1;border-color:rgb(4 181 221 / var(--tw-border-opacity, 1))}.dark\:hover\:bg-slate-800:hover:is(.dark *){--tw-bg-opacity: 1;background-color:rgb(30 41 59 / var(--tw-bg-opacity, 1))}.dark\:hover\:text-highlightPrimary:hover:is(.dark *){--tw-text-opacity: 1;color:rgb(4 181 221 / var(--tw-text-opacity, 1))}@media (min-width: 640px){.sm\:bottom-\[-70px\]{bottom:-70px}.sm\:bottom-\[50px\]{bottom:50px}.sm\:left-\[0px\]{left:0}.sm\:left-\[180px\]{left:180px}.sm\:left-\[30px\]{left:30px}.sm\:right-\[150px\]{right:150px}.sm\:right-\[220px\]{right:220px}.sm\:top-\[150px\]{top:150px}.sm\:h-\[85\%\]{height:85%}.sm\:w-\[25\%\]{width:25%}.sm\:w-\[50\%\]{width:50%}.sm\:w-\[60\%\]{width:60%}.sm\:w-\[70\%\]{width:70%}.sm\:w-\[90\%\]{width:90%}.sm\:translate-x-\[199\%\]{--tw-translate-x: 199%;transform:translate(var(--tw-translate-x),var(--tw-translate-y)) rotate(var(--tw-rotate)) skew(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}.sm\:translate-x-\[298\%\]{--tw-translate-x: 298%;transform:translate(var(--tw-translate-x),var(--tw-translate-y)) rotate(var(--tw-rotate)) skew(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}.sm\:translate-x-\[98\%\]{--tw-translate-x: 98%;transform:translate(var(--tw-translate-x),var(--tw-translate-y)) rotate(var(--tw-rotate)) skew(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}.sm\:grid-cols-2{grid-template-columns:repeat(2,minmax(0,1fr))}.sm\:grid-cols-4{grid-template-columns:repeat(4,minmax(0,1fr))}.sm\:flex-row{flex-direction:row}.sm\:items-center{align-items:center}.sm\:gap-16{gap:4rem}.sm\:overflow-visible{overflow:visible}.sm\:px-11{padding-left:2.75rem;padding-right:2.75rem}.sm\:px-2{padding-left:.5rem;padding-right:.5rem}.sm\:px-8{padding-left:2rem;padding-right:2rem}.sm\:py-2\.5{padding-top:.625rem;padding-bottom:.625rem}.sm\:pl-0{padding-left:0}.sm\:pl-4{padding-left:1rem}.sm\:pl-9{padding-left:2.25rem}.sm\:text-\[0\.9rem\]{font-size:.9rem}.sm\:text-\[1\.3rem\]{font-size:1.3rem}.sm\:text-\[1\.8rem\]{font-size:1.8rem}.sm\:text-\[1rem\]{font-size:1rem}.sm\:text-\[3rem\]{font-size:3rem}.sm\:leading-\[60px\]{line-height:60px}}@media (min-width: 1024px){.lg\:left-\[100px\]{left:100px}.lg\:right-\[250px\]{right:250px}.lg\:top-\[-100px\]{top:-100px}.lg\:top-\[-150px\]{top:-150px}.lg\:mt-12{margin-top:3rem}.lg\:flex{display:flex}.lg\:hidden{display:none}.lg\:h-\[210px\]{height:210px}.lg\:h-\[250px\]{height:250px}.lg\:w-\[40\%\]{width:40%}.lg\:w-\[50\%\]{width:50%}.lg\:w-\[60\%\]{width:60%}.lg\:grid-cols-2{grid-template-columns:repeat(2,minmax(0,1fr))}.lg\:grid-cols-3{grid-template-columns:repeat(3,minmax(0,1fr))}.lg\:grid-cols-8{grid-template-columns:repeat(8,minmax(0,1fr))}.lg\:flex-row{flex-direction:row}.lg\:items-end{align-items:flex-end}.lg\:gap-0{gap:0px}.lg\:gap-\[25px\]{gap:25px}.lg\:px-10{padding-left:2.5rem;padding-right:2.5rem}.lg\:pt-0{padding-top:0}.lg\:pt-14{padding-top:3.5rem}.lg\:pt-5{padding-top:1.25rem}.lg\:pt-8{padding-top:2rem}.lg\:first\:mt-8:first-child{margin-top:2rem}.lg\:last\:mt-8:last-child{margin-top:2rem}}.icon-scale-enter-active[data-v-343ce50f],.icon-scale-leave-active[data-v-343ce50f]{transition:all .3s ease}.icon-scale-enter-from[data-v-343ce50f],.icon-scale-leave-to[data-v-343ce50f]{opacity:0;transform:scale(.4)}.icon-scale-enter-to[data-v-343ce50f],.icon-scale-leave-from[data-v-343ce50f]{opacity:1;transform:scale(1)}.title-transition-enter-active[data-v-343ce50f]{transition:all .5s ease}.title-transition-leave-active[data-v-343ce50f]{transition:all .3s ease}.title-transition-enter-from[data-v-343ce50f]{opacity:0;position:absolute;overflow:hidden;transform:translateY(-20px)}.title-transition-enter-to[data-v-343ce50f],.title-transition-leave-from[data-v-343ce50f]{opacity:1;transform:translateY(0)}.title-transition-leave-to[data-v-343ce50f]{opacity:0;position:absolute;overflow:hidden;transform:translateY(20px)}@keyframes blogLoad{0%{opacity:0;transform:translateY(80px)}to{opacity:1;transform:translateY(0)}}.animate-blog-load{animation:blogLoad .8s forwards}.nav-menu-enter-active,.nav-menu-leave-active{transition:all .5s ease}.nav-menu-enter-from,.nav-menu-leave-to{opacity:0;transform:translate(300px)}.nav-menu-enter-to,.nav-menu-leave-from{opacity:1;transform:translate(0)}
+    </style>
+    <div class="dark:bg-darkBgColor">
+        <nav class="flex lg:hidden w-full sticky top-0 left-0 backdrop-blur-2xl z-50 py-1.5 px-6 max-w-[1600px] mx-auto border-b dark:border-darkBorderColor border-borderColor items-center justify-between dark:bg-darkBgColor transition-all duration-500 justify-between">
+            <a href="#home" class="font-bold text-xl text-black dark:text-white"><img
+                    src="https://res.cloudinary.com/dzikbafjg/image/upload/v1738171304/logo-light_uxxty6.png"
+                    alt="logo/image" class="w-[60px]"></a>
+            <div class="flex items-center gap-[10px]">
+                <button class="border overflow-hidden dark:border-darkTextColor border-gray-300 rounded-md h-[30px] py-2 px-2">
+                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                         aria-hidden="true" role="img"
+                         class="opacity-0 translate-y-[-40px] z-[-1] transition-all duration-700 iconify iconify--material-symbols-light"
+                         width="24" height="24" viewBox="0 0 24 24">
+                        <path fill="currentColor"
+                              d="M12 5.423q-.213 0-.357-.144t-.143-.356V2.539q0-.213.144-.357t.357-.144t.356.144t.143.356v2.385q0 .213-.144.356t-.357.144m4.643 1.935q-.14-.14-.13-.342q.01-.2.15-.366l1.65-1.694q.15-.166.359-.166t.377.17q.156.156.156.35t-.16.354L17.35 7.358q-.16.16-.354.16t-.354-.16m2.435 5.142q-.213 0-.356-.144t-.144-.357t.144-.356t.356-.143h2.385q.212 0 .356.144t.143.357t-.143.356t-.357.143zm-7.078 9.462q-.212 0-.356-.144t-.143-.357v-2.365q0-.212.144-.356t.357-.144t.356.144t.143.356v2.366q0 .212-.144.356t-.357.143M6.67 7.359l-1.713-1.67q-.166-.149-.166-.36t.166-.372q.16-.14.366-.14t.341.14L7.378 6.67q.14.134.14.341t-.136.348q-.15.14-.348.14t-.364-.14m11.662 11.686l-1.67-1.694q-.14-.165-.15-.366t.128-.342t.34-.14t.371.16l1.694 1.669q.146.14.143.344t-.149.37q-.16.164-.366.164t-.341-.165M2.539 12.5q-.213 0-.357-.144t-.143-.357t.143-.356t.357-.143h2.384q.213 0 .356.144t.144.357t-.144.356t-.356.143zm2.436 6.544q-.14-.16-.15-.363t.13-.344l1.676-1.675q.16-.16.35-.16t.358.155q.165.17.165.371t-.165.366l-1.65 1.65q-.166.166-.373.166t-.341-.166M12.005 17q-2.082 0-3.544-1.457T7 12.005T8.457 8.46T11.995 7t3.544 1.457T17 11.995t-1.457 3.544T12.005 17M12 16q1.65 0 2.825-1.175T16 12t-1.175-2.825T12 8T9.175 9.175T8 12t1.175 2.825T12 16m0-4"></path>
+                    </svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                         aria-hidden="true" role="img"
+                         class="opacity-100 translate-y-[-29px] transition-all duration-700 dark:text-darkTextColor iconify iconify--material-symbols-light"
+                         width="24" height="24" viewBox="0 0 24 24">
+                        <path fill="currentColor"
+                              d="M12.058 20q-3.334 0-5.667-2.333T4.058 12q0-3.039 1.98-5.27t4.904-2.634q.081 0 .159.006t.153.017q-.506.706-.801 1.57T10.158 7.5q0 2.667 1.866 4.533t4.534 1.867q.951 0 1.813-.295t1.548-.801q.012.075.017.153t.006.159q-.384 2.923-2.615 4.903T12.057 20"></path>
+                    </svg>
+                </button>
+                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true"
+                     role="img" class="dark:text-darkTextColor text-textColor iconify iconify--hugeicons" width="36"
+                     height="36" viewBox="0 0 24 24">
+                    <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                          stroke-width="1.5" d="M20 12H10m10-7H4m16 14H4" color="currentColor"></path>
+                </svg>
+            </div>
+        </nav><!---->
+        <nav class="hidden lg:flex w-full sticky top-0 left-0 backdrop-blur-2xl z-50 py-1.5 border-b dark:border-darkBorderColor border-borderColor items-center justify-between dark:bg-darkBgColor transition-all duration-500">
+            <div class="max-w-[1600px] mx-auto flex items-center justify-between w-full px-10"><a href="#home"
+                                                                                                  class="font-bold text-xl text-black dark:text-white"><img
+                    src="https://res.cloudinary.com/dzikbafjg/image/upload/v1738171304/logo-light_uxxty6.png"
+                    alt="logo/image" class="w-[60px]"></a>
+                <div class="flex items-center gap-[35px]"><a href="#about-me"
+                                                             class="!text-highlightPrimary text-[1.1rem] font-[400] dark:text-darkTextColor dark:hover:text-highlightPrimary text-textColor hover:text-highlightPrimary transition duration-300">About
+                    Me</a><a href="#experience"
+                             class="text-[1.1rem] font-[400] dark:text-darkTextColor dark:hover:text-highlightPrimary text-textColor hover:text-highlightPrimary transition duration-300">Experience</a><a
+                        href="#skills"
+                        class="text-[1.1rem] font-[400] dark:text-darkTextColor dark:hover:text-highlightPrimary text-textColor hover:text-highlightPrimary transition duration-300">Skills</a><a
+                        href="#projects"
+                        class="text-[1.1rem] font-[400] dark:text-darkTextColor dark:hover:text-highlightPrimary text-textColor hover:text-highlightPrimary transition duration-300">Projects</a><a
+                        href="#blogs"
+                        class="text-[1.1rem] font-[400] dark:text-darkTextColor dark:hover:text-highlightPrimary text-textColor hover:text-highlightPrimary transition duration-300">Blogs</a><a
+                        href="#achievements"
+                        class="text-[1.1rem] font-[400] dark:text-darkTextColor dark:hover:text-highlightPrimary text-textColor hover:text-highlightPrimary transition duration-300">Achievements</a>
+                </div>
+                <div class="flex items-center gap-[15px]">
+                    <button class="border overflow-hidden dark:border-darkTextColor border-gray-300 rounded-md h-[42px] py-2 px-3">
+                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                             aria-hidden="true" role="img"
+                             class="opacity-0 translate-y-[-40px] z-[-1] transition-all duration-700 iconify iconify--material-symbols-light"
+                             width="24" height="24" viewBox="0 0 24 24">
+                            <path fill="currentColor"
+                                  d="M12 5.423q-.213 0-.357-.144t-.143-.356V2.539q0-.213.144-.357t.357-.144t.356.144t.143.356v2.385q0 .213-.144.356t-.357.144m4.643 1.935q-.14-.14-.13-.342q.01-.2.15-.366l1.65-1.694q.15-.166.359-.166t.377.17q.156.156.156.35t-.16.354L17.35 7.358q-.16.16-.354.16t-.354-.16m2.435 5.142q-.213 0-.356-.144t-.144-.357t.144-.356t.356-.143h2.385q.212 0 .356.144t.143.357t-.143.356t-.357.143zm-7.078 9.462q-.212 0-.356-.144t-.143-.357v-2.365q0-.212.144-.356t.357-.144t.356.144t.143.356v2.366q0 .212-.144.356t-.357.143M6.67 7.359l-1.713-1.67q-.166-.149-.166-.36t.166-.372q.16-.14.366-.14t.341.14L7.378 6.67q.14.134.14.341t-.136.348q-.15.14-.348.14t-.364-.14m11.662 11.686l-1.67-1.694q-.14-.165-.15-.366t.128-.342t.34-.14t.371.16l1.694 1.669q.146.14.143.344t-.149.37q-.16.164-.366.164t-.341-.165M2.539 12.5q-.213 0-.357-.144t-.143-.357t.143-.356t.357-.143h2.384q.213 0 .356.144t.144.357t-.144.356t-.356.143zm2.436 6.544q-.14-.16-.15-.363t.13-.344l1.676-1.675q.16-.16.35-.16t.358.155q.165.17.165.371t-.165.366l-1.65 1.65q-.166.166-.373.166t-.341-.166M12.005 17q-2.082 0-3.544-1.457T7 12.005T8.457 8.46T11.995 7t3.544 1.457T17 11.995t-1.457 3.544T12.005 17M12 16q1.65 0 2.825-1.175T16 12t-1.175-2.825T12 8T9.175 9.175T8 12t1.175 2.825T12 16m0-4"></path>
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                             aria-hidden="true" role="img"
+                             class="opacity-100 translate-y-[-24px] transition-all duration-700 dark:text-darkTextColor iconify iconify--material-symbols-light"
+                             width="24" height="24" viewBox="0 0 24 24">
+                            <path fill="currentColor"
+                                  d="M12.058 20q-3.334 0-5.667-2.333T4.058 12q0-3.039 1.98-5.27t4.904-2.634q.081 0 .159.006t.153.017q-.506.706-.801 1.57T10.158 7.5q0 2.667 1.866 4.533t4.534 1.867q.951 0 1.813-.295t1.548-.801q.012.075.017.153t.006.159q-.384 2.923-2.615 4.903T12.057 20"></path>
+                        </svg>
+                    </button>
+                    <button class="py-2 px-4 border border-gray-300 dark:text-darkTextColor dark:border-darkTextColor rounded-md text-textColor flex items-center gap-[8px] hover:bg-gray-100 transition duration-300 dark:hover:bg-slate-800">
+                        <a download="resume" href="/resume.pdf">Resume</a></button>
+                </div>
+            </div>
+        </nav>
+        <section data-v-343ce50f=""
+                 class="px-6 lg:px-10 w-full max-w-[1600px] mx-auto pt-6 lg:pt-0 min-h-[90vh] flex-col lg:flex-row flex items-center justify-between relative dark:bg-darkBgColor transition-all duration-500 z-0 gap-12 sm:gap-16 lg:gap-0"
+                 id="home">
+            <div data-v-343ce50f=""
+                 class="bg-highlightPrimary absolute top-[30px] left-[80px] blur-[200px] dark:w-[250px] dark:h-[250px] dark:blur-[180px] w-[200px] h-[200px] rounded-full z-[-1]"></div>
+            <div data-v-343ce50f="" class="w-full lg:w-[60%] pt-12 lg:pt-0 relative"><p data-v-343ce50f=""
+                                                                                        class="text-[1.5rem] font-[500] text-disableColor dark:text-darkDisableColor">
+                Hi, I'm Usman</p>
+                <h1 data-v-343ce50f=""
+                    class="text-3xl sm:text-[3rem] text-nowrap overflow-hidden leading-[45px] font-[700] text-textColor sm:leading-[60px] dark:text-darkTextColor">
+                    Back-End Developer</h1>
+                <p data-v-343ce50f=""
+                   class="text-disableColor dark:text-darkDisableColor text-[1rem] mt-2 w-full sm:w-[70%]"> A
+                    self-taught full stack developer and Boson Studio co-founder. Passionate about mastering emerging
+                    technologies, solving complex challenges, and creating innovative software solutions through rapid
+                    learning and creative problem-solving. </p>
+                <div data-v-343ce50f="" class="flex flex-col sm:flex-row sm:items-center gap-[15px] mt-8"><a
+                        data-v-343ce50f="" href="https://zcal.co/usmanibraheem/meeting" target="_blank"
+                        class="py-2 px-4 bg-textColor dark:bg-darkTextColor dark:text-slate-800 rounded-md text-white flex items-center gap-[8px] hover:bg-textColor/90 transition duration-300 py-2.5 w-max">
+                    <svg data-v-343ce50f="" xmlns="http://www.w3.org/2000/svg"
+                         xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" width="22" height="22"
+                         viewBox="0 0 24 24" class="iconify iconify--hugeicons">
+                        <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                              stroke-width="1.5"
+                              d="M18 2v2M6 2v2m5.996 9h.008m-.008 4h.008m3.987-4H16m-8 0h.009M8 17h.009M3.5 8h17m-18 4.243c0-4.357 0-6.536 1.252-7.89C5.004 3 7.02 3 11.05 3h1.9c4.03 0 6.046 0 7.298 1.354C21.5 5.707 21.5 7.886 21.5 12.244v.513c0 4.357 0 6.536-1.252 7.89C18.996 22 16.98 22 12.95 22h-1.9c-4.03 0-6.046 0-7.298-1.354C2.5 19.293 2.5 17.114 2.5 12.756zM3 8h18"
+                              color="currentColor"></path>
+                    </svg>
+                    Schedule a meeting </a><a data-v-343ce50f="" href="#about-me"
+                                              class="py-2 px-4 border border-gray-300 dark:text-darkTextColor dark:border-darkTextColor rounded-md text-textColor flex items-center gap-[8px] hover:bg-gray-100 transition duration-300 dark:hover:bg-slate-800 py-2.5 w-max">
+                    About Me </a></div>
+                <img data-v-343ce50f="" alt="react" src="/smile.gif"
+                     class="absolute top-0 lg:top-[-100px] left-[100px] sm:left-[180px] lg:left-[100px] icon-scale-leave-active icon-scale-leave-to"
+                     style="height: 50px; width: 50px;"><!----><img data-v-343ce50f="" alt="vue" src="/robot.gif"
+                                                                    class="absolute top-0 lg:top-[-150px] sm:right-[150px] right-0 lg:right-[250px] icon-scale-enter-active icon-scale-enter-to"
+                                                                    style="height: 150px; width: 150px;"><!----></div>
+            <div data-v-343ce50f=""
+                 class="bg-highlightColor absolute bottom-[30px] left-[50%] transform translate-x-[-50%] blur-[180px] w-[250px] dark:w-[280px] dark:h-[280px] dark:blur-[200px] h-[250px] rounded-full z-[-1]"></div>
+            <div data-v-343ce50f=""
+                 class="w-full sm:w-[90%] lg:w-[40%] flex flex-col items-end sm:items-center lg:items-end relative">
+                <div data-v-343ce50f=""
+                     class="bg-white dark:bg-slate-900 animation-bounce rounded-md py-1 sm:py-2.5 px-5 sm:px-11 absolute shadow-sm top-[20px] sm:top-[150px] right-[-20px] sm:left-[0px] w-max flex transition-all duration-300 flex-col items-center justify-center">
+                    <h6 data-v-343ce50f=""
+                        class="text-[1.2rem] sm:text-[1.8rem] font-[600] text-highlightPrimary leading-[35px]">50+</h6>
+                    <p data-v-343ce50f=""
+                       class="text-disableColor dark:text-darkDisableColor text-[0.7rem] sm:text-[0.9rem]">Satisfied
+                        clients</p></div>
+                <div data-v-343ce50f=""
+                     class="bg-white dark:bg-slate-900 animation-bounce2 rounded-md py-1 sm:py-2.5 px-4 sm:px-8 absolute shadow-sm bottom-[20px] sm:bottom-[50px] left-[-30px] sm:left-[30px] w-max flex transition-all duration-300 flex-col items-center justify-center">
+                    <h6 data-v-343ce50f=""
+                        class="text-[1.2rem] sm:text-[1.8rem] font-[600] text-highlightColor leading-[35px]">6+</h6>
+                    <p data-v-343ce50f=""
+                       class="text-disableColor dark:text-darkDisableColor text-[0.7rem] sm:text-[0.9rem]">Years of
+                        experience</p></div>
+                <div data-v-343ce50f=""
+                     class="rounded-full border-4 border-black dark:border-white overflow-hidden px-4 pt-4 size-full max-w-[450px] max-h-[450px] flex items-end">
+                    <img data-v-343ce50f="" alt="usman/image" src="/images/me.png" class="w-full"></div>
+            </div>
+        </section>
+        <section data-v-55ea786e=""
+                 class="px-6 lg:px-10 w-full max-w-[1600px] mx-auto pt-16 lg:pt-8 dark:bg-darkBgColor transition-all duration-500"
+                 id="about-me">
+            <div data-v-55ea786e="" class="w-max mx-auto flex flex-col items-end"><h4 data-v-55ea786e=""
+                                                                                      class="text-[2.2rem] font-[600] text-textColor dark:text-darkTextColor text-center">
+                About Me</h4>
+                <div data-v-55ea786e="" class="w-[50%] h-[2px] bg-highlightColor"></div>
+                <div data-v-55ea786e="" class="w-[70%] h-[3px] bg-highlightPrimary mt-1"></div>
+            </div>
+            <div data-v-55ea786e=""
+                 class="grid grid-cols-1 lg:grid-cols-2 gap-[0px] lg:gap-[25px] pt-10 lg:pt-14 w-full">
+                <div data-v-55ea786e=""><img data-v-55ea786e="" alt="usman/image" src="/images/me-big.png"
+                                             class="w-full rounded-md object-cover"></div>
+                <div data-v-55ea786e="" class="pt-6 lg:pt-0">
+                    <div data-v-55ea786e=""
+                         class="w-full grid grid-cols-3 relative rounded-full border dark:border-darkTextColor/40 border-borderColor">
+                        <div data-v-55ea786e=""
+                             class="translate-x-[2%] bg-highlightPrimary/10 dark:bg-highlightPrimary/50 absolute h-[90%] sm:h-[85%] rounded-full top-[50%] w-[33%] transform transition-all duration-700 translate-y-[-50%]"></div>
+                        <button data-v-55ea786e=""
+                                class="py-3.5 px-4 text-center dark:text-darkTextColor text-[1rem] font-[400] transition-all duration-700 text-highlightPrimary">
+                            About me
+                        </button>
+                        <button data-v-55ea786e=""
+                                class="py-3.5 px-4 text-center dark:text-darkTextColor text-[1rem] font-[400] transition-all duration-700">
+                            Education
+                        </button>
+                        <button data-v-55ea786e=""
+                                class="py-3.5 px-4 text-center dark:text-darkTextColor text-[1rem] font-[400] transition-all duration-700">
+                            Hobby
+                        </button>
+                    </div>
+                    <div data-v-55ea786e="" class="relative h-auto overflow-hidden">
+                        <div data-v-55ea786e="" class="pt-6 sm:px-2">
+                            <div class="text-[1rem] font-[400] dark:text-darkTextColor text-textColor"><p> My
+                                professional journey in web development began with WordPress in 2018, with a pivotal
+                                breakthrough at Glorify, an e-commerce design platform. As a key developer, I was
+                                instrumental in transforming Glorify into a powerful tool that enables entrepreneurs to
+                                create professional visuals quickly and efficiently. </p>
+                                <p class="mt-5"> Glorify offers unique features like background removal, infinite
+                                    canvas, and e-commerce-optimized design templates. The platform grew to over 300,000
+                                    users across 100 countries, generated $2 million in annual recurring revenue, and
+                                    was featured on ProductHunt and in publications like Forbes and Entrepreneur. </p>
+                                <p class="mt-5"> After Glorify, I transitioned to freelancing, earning a top-rated badge
+                                    on Upwork before working directly with clients. This journey led me to found Boson
+                                    Studio, a software house designed to deliver innovative technological solutions. My
+                                    approach centers on rapid skill acquisition, creative problem-solving, and
+                                    developing practical web applications that address real-world business
+                                    challenges. </p></div>
+                            <div class="pt-6 flex items-center gap-[15px] flex-wrap"><a
+                                    href="https://web.facebook.com/engr.Uibraheem/" target="_blank"
+                                    class="p-2 border hover:bg-gray-100 transition-all dark:hover:bg-slate-800 duration-300 dark:border-darkBorderColor border-borderColor rounded-md w-max">
+                                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                     aria-hidden="true" role="img"
+                                     class="text-disableColor dark:text-darkTextColor iconify iconify--hugeicons"
+                                     width="24" height="24" viewBox="0 0 24 24">
+                                    <path fill="none" stroke="currentColor" stroke-linecap="round"
+                                          stroke-linejoin="round" stroke-width="1.5"
+                                          d="M6.182 10.333c-.978 0-1.182.192-1.182 1.111v1.667c0 .92.204 1.111 1.182 1.111h2.363v6.667c0 .92.205 1.111 1.182 1.111h2.364c.978 0 1.182-.192 1.182-1.111v-6.667h2.654c.741 0 .932-.135 1.136-.806l.507-1.666c.349-1.149.133-1.417-1.137-1.417h-3.16V7.556c0-.614.529-1.112 1.181-1.112h3.364c.978 0 1.182-.191 1.182-1.11V3.11C19 2.191 18.796 2 17.818 2h-3.364c-3.263 0-5.909 2.487-5.909 5.556v2.777z"
+                                          color="currentColor"></path>
+                                </svg>
+                            </a><a href="https://www.linkedin.com/in/usmanibrahim/" target="_blank"
+                                   class="p-2 border hover:bg-gray-100 transition-all dark:hover:bg-slate-800 duration-300 dark:border-darkBorderColor border-borderColor rounded-md w-max">
+                                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                     aria-hidden="true" role="img"
+                                     class="text-disableColor dark:text-darkTextColor iconify iconify--hugeicons"
+                                     width="24" height="24" viewBox="0 0 24 24">
+                                    <path fill="none" stroke="currentColor" stroke-linecap="round"
+                                          stroke-linejoin="round" stroke-width="1.5"
+                                          d="M4.5 9.5H4c-.943 0-1.414 0-1.707.293S2 10.557 2 11.5V20c0 .943 0 1.414.293 1.707S3.057 22 4 22h.5c.943 0 1.414 0 1.707-.293S6.5 20.943 6.5 20v-8.5c0-.943 0-1.414-.293-1.707S5.443 9.5 4.5 9.5m2-5.25a2.25 2.25 0 1 1-4.5 0a2.25 2.25 0 0 1 4.5 0m5.826 5.25H11.5c-.943 0-1.414 0-1.707.293S9.5 10.557 9.5 11.5V20c0 .943 0 1.414.293 1.707S10.557 22 11.5 22h.5c.943 0 1.414 0 1.707-.293S14 20.943 14 20v-3.5c0-1.657.528-3 2.088-3c.78 0 1.412.672 1.412 1.5v4.5c0 .943 0 1.414.293 1.707s.764.293 1.707.293h.499c.942 0 1.414 0 1.707-.293c.292-.293.293-.764.293-1.706L22 14c0-2.486-2.364-4.5-4.703-4.5c-1.332 0-2.52.652-3.297 1.673c0-.63 0-.945-.137-1.179a1 1 0 0 0-.358-.358c-.234-.137-.549-.137-1.179-.137"
+                                          color="currentColor"></path>
+                                </svg>
+                            </a><a href="https://x.com/EngrUIbraheem" target="_blank"
+                                   class="p-2 border hover:bg-gray-100 transition-all duration-300 dark:hover:bg-slate-800 dark:border-darkBorderColor border-borderColor rounded-md w-max">
+                                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                     aria-hidden="true" role="img"
+                                     class="text-disableColor dark:text-darkTextColor iconify iconify--hugeicons"
+                                     width="24" height="24" viewBox="0 0 24 24">
+                                    <path fill="none" stroke="currentColor" stroke-linecap="round"
+                                          stroke-linejoin="round" stroke-width="1.5"
+                                          d="m3 21l7.548-7.548M21 3l-7.548 7.548m0 0L8 3H3l7.548 10.452m2.904-2.904L21 21h-5l-5.452-7.548"
+                                          color="currentColor"></path>
+                                </svg>
+                            </a><a href="https://github.com/usmanibrahim74" target="_blank"
+                                   class="p-2 border dark:hover:bg-slate-800 hover:bg-gray-100 transition-all duration-300 dark:border-darkBorderColor border-borderColor rounded-md w-max">
+                                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                     aria-hidden="true" role="img"
+                                     class="text-disableColor dark:text-darkTextColor iconify iconify--hugeicons"
+                                     width="24" height="24" viewBox="0 0 24 24">
+                                    <g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                       stroke-width="1.5" color="currentColor">
+                                        <path d="M10 20.568c-3.429 1.157-6.286 0-8-3.568"></path>
+                                        <path d="M10 22v-3.242c0-.598.184-1.118.48-1.588c.204-.322.064-.78-.303-.88C7.134 15.452 5 14.107 5 9.645c0-1.16.38-2.25 1.048-3.2c.166-.236.25-.354.27-.46c.02-.108-.015-.247-.085-.527c-.283-1.136-.264-2.343.16-3.43c0 0 .877-.287 2.874.96c.456.285.684.428.885.46s.469-.035 1.005-.169A9.5 9.5 0 0 1 13.5 3a9.6 9.6 0 0 1 2.343.28c.536.134.805.2 1.006.169c.2-.032.428-.175.884-.46c1.997-1.247 2.874-.96 2.874-.96c.424 1.087.443 2.294.16 3.43c-.07.28-.104.42-.084.526s.103.225.269.461c.668.95 1.048 2.04 1.048 3.2c0 4.462-2.134 5.807-5.177 6.643c-.367.101-.507.559-.303.88c.296.47.48.99.48 1.589V22"></path>
+                                    </g>
+                                </svg>
+                            </a></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section
+                class="px-6 lg:px-10 w-full max-w-[1600px] mx-auto dark:bg-darkBgColor pt-12 lg:pt-0 transition-all duration-500"
+                id="experience">
+            <div class="w-max mx-auto pt-8 flex flex-col items-end"><h4
+                    class="text-[2.2rem] font-[600] text-textColor dark:text-darkTextColor text-center">Experience</h4>
+                <div class="w-[50%] h-[2px] bg-highlightColor"></div>
+                <div class="w-[70%] h-[3px] bg-highlightPrimary mt-1"></div>
+            </div>
+            <div class="pt-10 lg:pt-14 grid grid-cols-1 lg:grid-cols-3 gap-[20px]">
+                <div class="lg:first:mt-8 dark:border-darkBorderColor w-full h-max lg:last:mt-8 border border-borderColor rounded-md py-6 px-4 flex gap-[10px]">
+                    <a href="https://gloriaforce.com/appforce-2-android-tv-app/" target="_blank"
+                       class="min-w-[60px]"><img alt="company/logo"
+                                                 src="https://media.licdn.com/dms/image/v2/D4E03AQFXaiVjGtbA_A/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1690224485409?e=1743033600&amp;v=beta&amp;t=r1PsKjxzKPlOiO2ft5ee8_taB79LXaorcblrC2xi8mY"
+                                                 class="w-[60px] h-[60px] rounded-2xl"></a>
+                    <div><h3 class="text-[1.3rem] text-textColor dark:text-darkTextColor font-[500]">Web Developer</h3>
+                        <p class="flex items-center text-textColor dark:text-darkDisableColor font-[400] gap-[5px] text-[0.9rem]">
+                            <span>Gloria Force</span>
+                            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                 aria-hidden="true" role="img"
+                                 class="text-gray-400 iconify iconify--material-symbols-light" width="6" height="6"
+                                 viewBox="0 0 24 24">
+                                <path fill="currentColor"
+                                      d="M12.003 21q-1.866 0-3.51-.708q-1.643-.709-2.859-1.924t-1.925-2.856T3 12.003t.709-3.51Q4.417 6.85 5.63 5.634t2.857-1.925T11.997 3t3.51.709q1.643.708 2.859 1.922t1.925 2.857t.709 3.509t-.708 3.51t-1.924 2.859t-2.856 1.925t-3.509.709"></path>
+                            </svg>
+                            <span class="capitalize">freelance</span></p>
+                        <p class="flex items-center text-disableColor dark:text-darkDisableColor font-[400] text-[0.9rem]">
+                            <span>Sep 2020</span>
+                            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                 aria-hidden="true" role="img"
+                                 class="text-gray-400 iconify iconify--material-symbols-light" width="24" height="24"
+                                 viewBox="0 0 24 24">
+                                <path fill="currentColor"
+                                      d="M7.5 12.5q-.213 0-.356-.144T7 11.999t.144-.356t.356-.143h9q.213 0 .356.144t.144.357t-.144.356t-.356.143z"></path>
+                            </svg>
+                            <span class="capitalize">present</span></p>
+                        <p class="flex items-center flex-wrap text-disableColor dark:text-darkDisableColor gap-[5px] font-[400] text-[0.9rem]">
+                            <span>Gütersloh, Germany</span>
+                            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                 aria-hidden="true" role="img"
+                                 class="text-gray-400 iconify iconify--material-symbols-light" width="6" height="6"
+                                 viewBox="0 0 24 24">
+                                <path fill="currentColor"
+                                      d="M12.003 21q-1.866 0-3.51-.708q-1.643-.709-2.859-1.924t-1.925-2.856T3 12.003t.709-3.51Q4.417 6.85 5.63 5.634t2.857-1.925T11.997 3t3.51.709q1.643.708 2.859 1.922t1.925 2.857t.709 3.509t-.708 3.51t-1.924 2.859t-2.856 1.925t-3.509.709"></path>
+                            </svg>
+                            <span class="capitalize">remote</span></p>
+                        <div class="text-[0.9rem] font-[400] dark:text-darkDisableColor text-disableColor mt-1">Gloria
+                            Force Appforce II is a premium Android TV app that allows you to watch live TV, mov <span
+                                    class="text-highlightPrimary/80 underline cursor-pointer ml-1"> See More </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="lg:first:mt-8 dark:border-darkBorderColor w-full h-max lg:last:mt-8 border border-borderColor rounded-md py-6 px-4 flex gap-[10px]">
+                    <a href="https://synergidigital.com/" target="_blank" class="min-w-[60px]"><img alt="company/logo"
+                                                                                                    src="https://media.licdn.com/dms/image/v2/D4E0BAQHq-tC7TX5g1w/company-logo_200_200/company-logo_200_200/0/1722423733340?e=1745452800&amp;v=beta&amp;t=Whd8bkkhWWeVpgADJCzlE_C6UjRAmrA_HdLhhSbwqRg"
+                                                                                                    class="w-[60px] h-[60px] rounded-2xl"></a>
+                    <div><h3 class="text-[1.3rem] text-textColor dark:text-darkTextColor font-[500]">Full Stack
+                        Developer</h3>
+                        <p class="flex items-center text-textColor dark:text-darkDisableColor font-[400] gap-[5px] text-[0.9rem]">
+                            <span>Synergi Digital</span>
+                            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                 aria-hidden="true" role="img"
+                                 class="text-gray-400 iconify iconify--material-symbols-light" width="6" height="6"
+                                 viewBox="0 0 24 24">
+                                <path fill="currentColor"
+                                      d="M12.003 21q-1.866 0-3.51-.708q-1.643-.709-2.859-1.924t-1.925-2.856T3 12.003t.709-3.51Q4.417 6.85 5.63 5.634t2.857-1.925T11.997 3t3.51.709q1.643.708 2.859 1.922t1.925 2.857t.709 3.509t-.708 3.51t-1.924 2.859t-2.856 1.925t-3.509.709"></path>
+                            </svg>
+                            <span class="capitalize">freelance</span></p>
+                        <p class="flex items-center text-disableColor dark:text-darkDisableColor font-[400] text-[0.9rem]">
+                            <span>Dec 2019</span>
+                            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                 aria-hidden="true" role="img"
+                                 class="text-gray-400 iconify iconify--material-symbols-light" width="24" height="24"
+                                 viewBox="0 0 24 24">
+                                <path fill="currentColor"
+                                      d="M7.5 12.5q-.213 0-.356-.144T7 11.999t.144-.356t.356-.143h9q.213 0 .356.144t.144.357t-.144.356t-.356.143z"></path>
+                            </svg>
+                            <span class="capitalize">present</span></p>
+                        <p class="flex items-center flex-wrap text-disableColor dark:text-darkDisableColor gap-[5px] font-[400] text-[0.9rem]">
+                            <span>Nottingham, United Kingdom</span>
+                            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                 aria-hidden="true" role="img"
+                                 class="text-gray-400 iconify iconify--material-symbols-light" width="6" height="6"
+                                 viewBox="0 0 24 24">
+                                <path fill="currentColor"
+                                      d="M12.003 21q-1.866 0-3.51-.708q-1.643-.709-2.859-1.924t-1.925-2.856T3 12.003t.709-3.51Q4.417 6.85 5.63 5.634t2.857-1.925T11.997 3t3.51.709q1.643.708 2.859 1.922t1.925 2.857t.709 3.509t-.708 3.51t-1.924 2.859t-2.856 1.925t-3.509.709"></path>
+                            </svg>
+                            <span class="capitalize">remote</span></p>
+                        <div class="text-[0.9rem] font-[400] dark:text-darkDisableColor text-disableColor mt-1">Synergi
+                            Digital is a digital marketing agency that provides a range of services including <span
+                                    class="text-highlightPrimary/80 underline cursor-pointer ml-1"> See More </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="lg:first:mt-8 dark:border-darkBorderColor w-full h-max lg:last:mt-8 border border-borderColor rounded-md py-6 px-4 flex gap-[10px]">
+                    <a href="https://uforiainfotech.com/" target="_blank" class="min-w-[60px]"><img alt="company/logo"
+                                                                                                    src="https://media.licdn.com/dms/image/v2/C4D0BAQHgUvfkqEWrYg/company-logo_200_200/company-logo_200_200/0/1668865904656/uforiainfotech_logo?e=1745452800&amp;v=beta&amp;t=zIoR9Vnh1O27ROt52yR4VRICfo9w8_mM5nESCP-V8eU"
+                                                                                                    class="w-[60px] h-[60px] rounded-2xl"></a>
+                    <div><h3 class="text-[1.3rem] text-textColor dark:text-darkTextColor font-[500]">Lead Application
+                        Developer</h3>
+                        <p class="flex items-center text-textColor dark:text-darkDisableColor font-[400] gap-[5px] text-[0.9rem]">
+                            <span>Uforia Info Tech</span>
+                            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                 aria-hidden="true" role="img"
+                                 class="text-gray-400 iconify iconify--material-symbols-light" width="6" height="6"
+                                 viewBox="0 0 24 24">
+                                <path fill="currentColor"
+                                      d="M12.003 21q-1.866 0-3.51-.708q-1.643-.709-2.859-1.924t-1.925-2.856T3 12.003t.709-3.51Q4.417 6.85 5.63 5.634t2.857-1.925T11.997 3t3.51.709q1.643.708 2.859 1.922t1.925 2.857t.709 3.509t-.708 3.51t-1.924 2.859t-2.856 1.925t-3.509.709"></path>
+                            </svg>
+                            <span class="capitalize">full time</span></p>
+                        <p class="flex items-center text-disableColor dark:text-darkDisableColor font-[400] text-[0.9rem]">
+                            <span>Oct 2018</span>
+                            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                 aria-hidden="true" role="img"
+                                 class="text-gray-400 iconify iconify--material-symbols-light" width="24" height="24"
+                                 viewBox="0 0 24 24">
+                                <path fill="currentColor"
+                                      d="M7.5 12.5q-.213 0-.356-.144T7 11.999t.144-.356t.356-.143h9q.213 0 .356.144t.144.357t-.144.356t-.356.143z"></path>
+                            </svg>
+                            <span class="capitalize">Dec 2019</span></p>
+                        <p class="flex items-center flex-wrap text-disableColor dark:text-darkDisableColor gap-[5px] font-[400] text-[0.9rem]">
+                            <span>Islamabad, Pakistan</span>
+                            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                 aria-hidden="true" role="img"
+                                 class="text-gray-400 iconify iconify--material-symbols-light" width="6" height="6"
+                                 viewBox="0 0 24 24">
+                                <path fill="currentColor"
+                                      d="M12.003 21q-1.866 0-3.51-.708q-1.643-.709-2.859-1.924t-1.925-2.856T3 12.003t.709-3.51Q4.417 6.85 5.63 5.634t2.857-1.925T11.997 3t3.51.709q1.643.708 2.859 1.922t1.925 2.857t.709 3.509t-.708 3.51t-1.924 2.859t-2.856 1.925t-3.509.709"></path>
+                            </svg>
+                            <span class="capitalize">on-site</span></p>
+                        <div class="text-[0.9rem] font-[400] dark:text-darkDisableColor text-disableColor mt-1">Uforia
+                            Infotech is a global digital solutions company, specializing in E-commerce &amp; Web2Pr
+                            <span class="text-highlightPrimary/80 underline cursor-pointer ml-1"> See More </span></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section
+                class="px-6 lg:px-10 w-full max-w-[1600px] mx-auto dark:bg-darkBgColor pt-12 lg:pt-5 transition-all duration-500"
+                id="skills">
+            <div class="w-max mx-auto pt-12 flex flex-col items-end"><h4
+                    class="text-[2.2rem] font-[600] text-textColor dark:text-darkTextColor text-center">Skills</h4>
+                <div class="w-[50%] h-[2px] bg-highlightColor"></div>
+                <div class="w-[70%] h-[3px] bg-highlightPrimary mt-1"></div>
+            </div>
+            <div class="grid mt-12 grid-cols-3 w-[90%] sm:w-[60%] lg:w-[50%] mx-auto relative rounded-full border dark:border-darkTextColor/40 border-borderColor">
+                <div class="translate-x-[2%] bg-highlightPrimary/10 dark:bg-highlightPrimary/50 absolute h-[85%] rounded-full top-[50%] w-[33%] transform transition-all duration-700 translate-y-[-50%]"></div>
+                <button class="py-3.5 px-4 text-center dark:text-darkTextColor text-[1rem] font-[400] transition-all duration-700 text-highlightPrimary">
+                    Front-End
+                </button>
+                <button class="py-3.5 px-4 text-center dark:text-darkTextColor text-[1rem] font-[400] transition-all duration-700">
+                    Back-End
+                </button>
+                <button class="py-3.5 px-4 text-center dark:text-darkTextColor text-[1rem] font-[400] transition-all duration-700">
+                    Tools
+                </button>
+            </div>
+            <div class="mt-8 grid grid-cols-2 sm:grid-cols-4 lg:grid-cols-8 gap-[15px]">
+                <div>
+                    <div class="border-[2px] border-dashed border-borderColor/80 hover:border-highlightPrimary transition-all duration-300 cursor-pointer rounded-md px-3 py-4 flex flex-col items-center justify-center group dark:border-darkBorderColor dark:hover:border-highlightPrimary">
+                        <img alt="icon"
+                             class="h-[32px] object-cover rounded-md group-hover:scale-[1.2] transition-all duration-300"
+                             src="/images/skills/js.svg">
+                        <p class="text-[1rem] dark:text-darkTextColor capitalize mt-2 font-[500] text-textColor">
+                            javascript</p></div>
+                </div>
+                <div>
+                    <div class="border-[2px] border-dashed border-borderColor/80 hover:border-highlightPrimary transition-all duration-300 cursor-pointer rounded-md px-3 py-4 flex flex-col items-center justify-center group dark:border-darkBorderColor dark:hover:border-highlightPrimary">
+                        <img alt="icon"
+                             class="h-[32px] object-cover rounded-md group-hover:scale-[1.2] transition-all duration-300"
+                             src="/images/skills/react.svg">
+                        <p class="text-[1rem] dark:text-darkTextColor capitalize mt-2 font-[500] text-textColor">react
+                            js</p></div>
+                </div>
+                <div>
+                    <div class="border-[2px] border-dashed border-borderColor/80 hover:border-highlightPrimary transition-all duration-300 cursor-pointer rounded-md px-3 py-4 flex flex-col items-center justify-center group dark:border-darkBorderColor dark:hover:border-highlightPrimary">
+                        <img alt="icon"
+                             class="h-[32px] object-cover rounded-md group-hover:scale-[1.2] transition-all duration-300"
+                             src="/images/skills/vue.svg">
+                        <p class="text-[1rem] dark:text-darkTextColor capitalize mt-2 font-[500] text-textColor">vue
+                            js</p></div>
+                </div>
+                <div>
+                    <div class="border-[2px] border-dashed border-borderColor/80 hover:border-highlightPrimary transition-all duration-300 cursor-pointer rounded-md px-3 py-4 flex flex-col items-center justify-center group dark:border-darkBorderColor dark:hover:border-highlightPrimary">
+                        <img alt="icon"
+                             class="h-[32px] object-cover rounded-md group-hover:scale-[1.2] transition-all duration-300"
+                             src="/images/skills/pinia.svg">
+                        <p class="text-[1rem] dark:text-darkTextColor capitalize mt-2 font-[500] text-textColor">
+                            pinia</p></div>
+                </div>
+                <div>
+                    <div class="border-[2px] border-dashed border-borderColor/80 hover:border-highlightPrimary transition-all duration-300 cursor-pointer rounded-md px-3 py-4 flex flex-col items-center justify-center group dark:border-darkBorderColor dark:hover:border-highlightPrimary">
+                        <img alt="icon"
+                             class="h-[32px] object-cover rounded-md group-hover:scale-[1.2] transition-all duration-300"
+                             src="/images/skills/sass.svg">
+                        <p class="text-[1rem] dark:text-darkTextColor capitalize mt-2 font-[500] text-textColor">
+                            sass</p></div>
+                </div>
+                <div>
+                    <div class="border-[2px] border-dashed border-borderColor/80 hover:border-highlightPrimary transition-all duration-300 cursor-pointer rounded-md px-3 py-4 flex flex-col items-center justify-center group dark:border-darkBorderColor dark:hover:border-highlightPrimary">
+                        <img alt="icon"
+                             class="h-[32px] object-cover rounded-md group-hover:scale-[1.2] transition-all duration-300"
+                             src="/images/skills/tailwind.svg">
+                        <p class="text-[1rem] dark:text-darkTextColor capitalize mt-2 font-[500] text-textColor">
+                            tailwind css</p></div>
+                </div>
+                <div>
+                    <div class="border-[2px] border-dashed border-borderColor/80 hover:border-highlightPrimary transition-all duration-300 cursor-pointer rounded-md px-3 py-4 flex flex-col items-center justify-center group dark:border-darkBorderColor dark:hover:border-highlightPrimary">
+                        <img alt="icon"
+                             class="h-[32px] object-cover rounded-md group-hover:scale-[1.2] transition-all duration-300"
+                             src="/images/skills/inertia.png">
+                        <p class="text-[1rem] dark:text-darkTextColor capitalize mt-2 font-[500] text-textColor">
+                            inertia</p></div>
+                </div>
+                <div>
+                    <div class="border-[2px] border-dashed border-borderColor/80 hover:border-highlightPrimary transition-all duration-300 cursor-pointer rounded-md px-3 py-4 flex flex-col items-center justify-center group dark:border-darkBorderColor dark:hover:border-highlightPrimary">
+                        <img alt="icon"
+                             class="h-[32px] object-cover rounded-md group-hover:scale-[1.2] transition-all duration-300"
+                             src="/images/skills/fabric.svg">
+                        <p class="text-[1rem] dark:text-darkTextColor capitalize mt-2 font-[500] text-textColor">fabric
+                            js</p></div>
+                </div>
+                <div>
+                    <div class="border-[2px] border-dashed border-borderColor/80 hover:border-highlightPrimary transition-all duration-300 cursor-pointer rounded-md px-3 py-4 flex flex-col items-center justify-center group dark:border-darkBorderColor dark:hover:border-highlightPrimary">
+                        <img alt="icon"
+                             class="h-[32px] object-cover rounded-md group-hover:scale-[1.2] transition-all duration-300"
+                             src="/images/skills/shadcn.png">
+                        <p class="text-[1rem] dark:text-darkTextColor capitalize mt-2 font-[500] text-textColor">
+                            shadcn</p></div>
+                </div>
+                <div>
+                    <div class="border-[2px] border-dashed border-borderColor/80 hover:border-highlightPrimary transition-all duration-300 cursor-pointer rounded-md px-3 py-4 flex flex-col items-center justify-center group dark:border-darkBorderColor dark:hover:border-highlightPrimary">
+                        <img alt="icon"
+                             class="h-[32px] object-cover rounded-md group-hover:scale-[1.2] transition-all duration-300"
+                             src="/images/skills/swiper.svg">
+                        <p class="text-[1rem] dark:text-darkTextColor capitalize mt-2 font-[500] text-textColor">swiper
+                            js</p></div>
+                </div>
+            </div>
+        </section>
+        <section
+                class="px-6 lg:px-10 w-full max-w-[1600px] mx-auto dark:bg-darkBgColor pt-8 transition-all duration-500"
+                id="projects">
+            <div class="w-max mx-auto pt-12 flex flex-col items-end"><h4
+                    class="text-[2.2rem] font-[600] text-textColor dark:text-darkTextColor text-center">Projects</h4>
+                <div class="w-[50%] h-[2px] bg-highlightColor"></div>
+                <div class="w-[70%] h-[3px] bg-highlightPrimary mt-1"></div>
+            </div>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-[20px] mt-12">
+                <div class="border dark:border-darkBorderColor border-borderColor rounded-md">
+                    <div class="h-[150px] lg:h-[210px] overflow-hidden rounded-t-md"><img
+                            alt="Tripvlog - Travel Vlog Platform" src="/tripvlog.png"
+                            class="rounded-t-md hover:scale-[1.1] transition-all duration-500 object-cover"></div>
+                    <div class="p-4"><h3 class="text-[1.3rem] dark:text-darkTextColor text-textColor font-[600]">
+                        Tripvlog - Travel Vlog Platform</h3>
+                        <div class="text-[0.9rem] font-[400] dark:text-darkDisableColor text-disableColor mt-1">
+                            Tripvlog, the world's first video-driven platform, is reshaping the way we experience trav
+                            <span class="text-highlightPrimary/80 underline cursor-pointer ml-1"> See More </span></div>
+                        <div class="flex items-center flex-wrap gap-[8px] mt-3"><p
+                                class="text-[1rem] font-[600] dark:text-darkDisableColor text-disableColor">
+                            Technology:</p>
+                            <div class="flex items-center gap-[15px] flex-wrap">
+                                <div class="border rounded-md dark:text-darkDisableColor dark:border-darkBorderColor capitalize px-2 py-1 text-[0.8rem] text-disableColor border-borderColor">
+                                    vueJS
+                                </div>
+                            </div>
+                            <div class="flex items-center gap-[15px] flex-wrap">
+                                <div class="border rounded-md dark:text-darkDisableColor dark:border-darkBorderColor capitalize px-2 py-1 text-[0.8rem] text-disableColor border-borderColor">
+                                    tailwind CSS
+                                </div>
+                            </div>
+                            <div class="flex items-center gap-[15px] flex-wrap">
+                                <div class="border rounded-md dark:text-darkDisableColor dark:border-darkBorderColor capitalize px-2 py-1 text-[0.8rem] text-disableColor border-borderColor">
+                                    laravel
+                                </div>
+                            </div>
+                            <div class="flex items-center gap-[15px] flex-wrap">
+                                <div class="border rounded-md dark:text-darkDisableColor dark:border-darkBorderColor capitalize px-2 py-1 text-[0.8rem] text-disableColor border-borderColor">
+                                    filament
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flex items-center gap-[10px] mt-5"><a
+                                class="py-2 px-4 bg-textColor dark:bg-darkTextColor dark:text-slate-800 rounded-md text-white flex items-center gap-[8px] hover:bg-textColor/90 transition duration-300"
+                                target="_blank" href="https://tripvlog.com/">
+                            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                 aria-hidden="true" role="img" width="20" height="20" viewBox="0 0 24 24"
+                                 class="iconify iconify--hugeicons">
+                                <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                      stroke-width="1.5"
+                                      d="M11.099 3c-3.65.007-5.56.096-6.781 1.318C3 5.636 3 7.757 3 12c0 4.242 0 6.364 1.318 7.682S7.757 21 11.998 21c4.243 0 6.364 0 7.682-1.318c1.22-1.221 1.31-3.133 1.317-6.782m-.441-9.404L11.05 13.06m9.507-9.563c-.494-.494-3.822-.448-4.525-.438m4.525.438c.494.495.448 3.827.438 4.531"
+                                      color="currentColor"></path>
+                            </svg>
+                            Live </a><!----></div>
+                    </div>
+                </div>
+                <div class="border dark:border-darkBorderColor border-borderColor rounded-md">
+                    <div class="h-[150px] lg:h-[210px] overflow-hidden rounded-t-md"><img alt="DonorCloud"
+                                                                                          src="/donorcloud.png"
+                                                                                          class="rounded-t-md hover:scale-[1.1] transition-all duration-500 object-cover">
+                    </div>
+                    <div class="p-4"><h3 class="text-[1.3rem] dark:text-darkTextColor text-textColor font-[600]">
+                        DonorCloud</h3>
+                        <div class="text-[0.9rem] font-[400] dark:text-darkDisableColor text-disableColor mt-1"> A
+                            platform designed for fundraisers by fundraisers, we set out to change the status quo r
+                            <span class="text-highlightPrimary/80 underline cursor-pointer ml-1"> See More </span></div>
+                        <div class="flex items-center flex-wrap gap-[8px] mt-3"><p
+                                class="text-[1rem] font-[600] dark:text-darkDisableColor text-disableColor">
+                            Technology:</p>
+                            <div class="flex items-center gap-[15px] flex-wrap">
+                                <div class="border rounded-md dark:text-darkDisableColor dark:border-darkBorderColor capitalize px-2 py-1 text-[0.8rem] text-disableColor border-borderColor">
+                                    vueJS
+                                </div>
+                            </div>
+                            <div class="flex items-center gap-[15px] flex-wrap">
+                                <div class="border rounded-md dark:text-darkDisableColor dark:border-darkBorderColor capitalize px-2 py-1 text-[0.8rem] text-disableColor border-borderColor">
+                                    tailwind CSS
+                                </div>
+                            </div>
+                            <div class="flex items-center gap-[15px] flex-wrap">
+                                <div class="border rounded-md dark:text-darkDisableColor dark:border-darkBorderColor capitalize px-2 py-1 text-[0.8rem] text-disableColor border-borderColor">
+                                    laravel
+                                </div>
+                            </div>
+                            <div class="flex items-center gap-[15px] flex-wrap">
+                                <div class="border rounded-md dark:text-darkDisableColor dark:border-darkBorderColor capitalize px-2 py-1 text-[0.8rem] text-disableColor border-borderColor">
+                                    PHP
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flex items-center gap-[10px] mt-5"><a
+                                class="py-2 px-4 bg-textColor dark:bg-darkTextColor dark:text-slate-800 rounded-md text-white flex items-center gap-[8px] hover:bg-textColor/90 transition duration-300"
+                                target="_blank" href="https://www.donorcloud.co.uk/">
+                            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                 aria-hidden="true" role="img" width="20" height="20" viewBox="0 0 24 24"
+                                 class="iconify iconify--hugeicons">
+                                <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                      stroke-width="1.5"
+                                      d="M11.099 3c-3.65.007-5.56.096-6.781 1.318C3 5.636 3 7.757 3 12c0 4.242 0 6.364 1.318 7.682S7.757 21 11.998 21c4.243 0 6.364 0 7.682-1.318c1.22-1.221 1.31-3.133 1.317-6.782m-.441-9.404L11.05 13.06m9.507-9.563c-.494-.494-3.822-.448-4.525-.438m4.525.438c.494.495.448 3.827.438 4.531"
+                                      color="currentColor"></path>
+                            </svg>
+                            Live </a><!----></div>
+                    </div>
+                </div>
+                <div class="border dark:border-darkBorderColor border-borderColor rounded-md">
+                    <div class="h-[150px] lg:h-[210px] overflow-hidden rounded-t-md"><img alt="Glorify"
+                                                                                          src="https://framerusercontent.com/images/jB1WR8yVj96wz5hAurp3exyzIYY.png"
+                                                                                          class="rounded-t-md hover:scale-[1.1] transition-all duration-500 object-cover">
+                    </div>
+                    <div class="p-4"><h3 class="text-[1.3rem] dark:text-darkTextColor text-textColor font-[600]">
+                        Glorify</h3>
+                        <div class="text-[0.9rem] font-[400] dark:text-darkDisableColor text-disableColor mt-1">Glorify
+                            is a web-based design tool that allows users to create stunning graphics for socia <span
+                                    class="text-highlightPrimary/80 underline cursor-pointer ml-1"> See More </span>
+                        </div>
+                        <div class="flex items-center flex-wrap gap-[8px] mt-3"><p
+                                class="text-[1rem] font-[600] dark:text-darkDisableColor text-disableColor">
+                            Technology:</p>
+                            <div class="flex items-center gap-[15px] flex-wrap">
+                                <div class="border rounded-md dark:text-darkDisableColor dark:border-darkBorderColor capitalize px-2 py-1 text-[0.8rem] text-disableColor border-borderColor">
+                                    fabricJS
+                                </div>
+                            </div>
+                            <div class="flex items-center gap-[15px] flex-wrap">
+                                <div class="border rounded-md dark:text-darkDisableColor dark:border-darkBorderColor capitalize px-2 py-1 text-[0.8rem] text-disableColor border-borderColor">
+                                    Laravel
+                                </div>
+                            </div>
+                            <div class="flex items-center gap-[15px] flex-wrap">
+                                <div class="border rounded-md dark:text-darkDisableColor dark:border-darkBorderColor capitalize px-2 py-1 text-[0.8rem] text-disableColor border-borderColor">
+                                    vueJS
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flex items-center gap-[10px] mt-5"><a
+                                class="py-2 px-4 bg-textColor dark:bg-darkTextColor dark:text-slate-800 rounded-md text-white flex items-center gap-[8px] hover:bg-textColor/90 transition duration-300"
+                                target="_blank" href="https://glorify.com/">
+                            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                 aria-hidden="true" role="img" width="20" height="20" viewBox="0 0 24 24"
+                                 class="iconify iconify--hugeicons">
+                                <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                      stroke-width="1.5"
+                                      d="M11.099 3c-3.65.007-5.56.096-6.781 1.318C3 5.636 3 7.757 3 12c0 4.242 0 6.364 1.318 7.682S7.757 21 11.998 21c4.243 0 6.364 0 7.682-1.318c1.22-1.221 1.31-3.133 1.317-6.782m-.441-9.404L11.05 13.06m9.507-9.563c-.494-.494-3.822-.448-4.525-.438m4.525.438c.494.495.448 3.827.438 4.531"
+                                      color="currentColor"></path>
+                            </svg>
+                            Live </a><!----></div>
+                    </div>
+                </div>
+                <div class="border dark:border-darkBorderColor border-borderColor rounded-md">
+                    <div class="h-[150px] lg:h-[210px] overflow-hidden rounded-t-md"><img
+                            alt="Hospital Indoor Management System" src="/hms.png"
+                            class="rounded-t-md hover:scale-[1.1] transition-all duration-500 object-cover"></div>
+                    <div class="p-4"><h3 class="text-[1.3rem] dark:text-darkTextColor text-textColor font-[600]">
+                        Hospital Indoor Management System</h3>
+                        <div class="text-[0.9rem] font-[400] dark:text-darkDisableColor text-disableColor mt-1">Hospital
+                            Indoor Management System is a web-based application that helps hospitals manage t <span
+                                    class="text-highlightPrimary/80 underline cursor-pointer ml-1"> See More </span>
+                        </div>
+                        <div class="flex items-center flex-wrap gap-[8px] mt-3"><p
+                                class="text-[1rem] font-[600] dark:text-darkDisableColor text-disableColor">
+                            Technology:</p>
+                            <div class="flex items-center gap-[15px] flex-wrap">
+                                <div class="border rounded-md dark:text-darkDisableColor dark:border-darkBorderColor capitalize px-2 py-1 text-[0.8rem] text-disableColor border-borderColor">
+                                    VueJS
+                                </div>
+                            </div>
+                            <div class="flex items-center gap-[15px] flex-wrap">
+                                <div class="border rounded-md dark:text-darkDisableColor dark:border-darkBorderColor capitalize px-2 py-1 text-[0.8rem] text-disableColor border-borderColor">
+                                    tailwind CSS
+                                </div>
+                            </div>
+                            <div class="flex items-center gap-[15px] flex-wrap">
+                                <div class="border rounded-md dark:text-darkDisableColor dark:border-darkBorderColor capitalize px-2 py-1 text-[0.8rem] text-disableColor border-borderColor">
+                                    laravel
+                                </div>
+                            </div>
+                            <div class="flex items-center gap-[15px] flex-wrap">
+                                <div class="border rounded-md dark:text-darkDisableColor dark:border-darkBorderColor capitalize px-2 py-1 text-[0.8rem] text-disableColor border-borderColor">
+                                    Shadcn
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flex items-center gap-[10px] mt-5"><a
+                                class="py-2 px-4 bg-textColor dark:bg-darkTextColor dark:text-slate-800 rounded-md text-white flex items-center gap-[8px] hover:bg-textColor/90 transition duration-300"
+                                target="_blank" href="https://demo-hms.bosonstudio.com">
+                            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                 aria-hidden="true" role="img" width="20" height="20" viewBox="0 0 24 24"
+                                 class="iconify iconify--hugeicons">
+                                <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                      stroke-width="1.5"
+                                      d="M11.099 3c-3.65.007-5.56.096-6.781 1.318C3 5.636 3 7.757 3 12c0 4.242 0 6.364 1.318 7.682S7.757 21 11.998 21c4.243 0 6.364 0 7.682-1.318c1.22-1.221 1.31-3.133 1.317-6.782m-.441-9.404L11.05 13.06m9.507-9.563c-.494-.494-3.822-.448-4.525-.438m4.525.438c.494.495.448 3.827.438 4.531"
+                                      color="currentColor"></path>
+                            </svg>
+                            Live </a><!----></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section
+                class="px-6 lg:px-10 w-full max-w-[1600px] mx-auto max-w-full dark:border-darkBorderColor border-t dark:bg-darkBgColor border-borderColor py-5">
+            <p class="text-[0.9rem] text-disableColor dark:text-darkDisableColor text-center">Copyright © 2025 by Usman
+                Ibraheem.</p></section>
+    </div>
+
+</div>
 <script type="module" src="/src/main.js"></script>
 </body>
 </html>
