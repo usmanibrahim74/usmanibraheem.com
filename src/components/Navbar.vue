@@ -49,8 +49,8 @@ const handleNavitemClick = (tab) => {
 
     <div class="max-w-[1600px] mx-auto flex items-center justify-between w-full px-10">
       <a href="#home" class="font-bold text-xl text-black dark:text-white">
-<!--        <img :src="currentTheme === 'light' ? 'https://i.ibb.co.com/TYmXCgC/logo.png' : 'https://i.ibb.co.com/qx6pcB6/darklogo.png'" alt="logo/image" class="w-[60px]">-->
-        Usman Ibraheem
+
+        <img :src="currentTheme === 'light' ? 'https://res.cloudinary.com/dzikbafjg/image/upload/v1738171304/logo-dark_epm0oj.png' : 'https://res.cloudinary.com/dzikbafjg/image/upload/v1738171304/logo-light_uxxty6.png'" alt="logo/image" class="w-[60px]">
       </a>
 
       <div class="flex items-center gap-[35px]">
