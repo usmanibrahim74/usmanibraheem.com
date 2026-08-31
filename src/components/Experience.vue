@@ -1,5 +1,6 @@
 <script setup>
 import Layout from "../Layout.vue";
+import SectionTitle from "./SectionTitle.vue";
 import {experienceData} from "../Utils/ExperienceData.js";
 import {Icon} from "@iconify/vue";
 import {ref} from "vue";
@@ -21,28 +22,22 @@ const toggleDescription = (description) => {
 
 <template>
   <Layout id="experience" class="dark:bg-darkBgColor pt-12 lg:pt-0 transition-all duration-500">
-    <div class="w-max mx-auto pt-8 flex flex-col items-end">
-      <h4 class="text-[2.2rem] font-[600] text-textColor dark:text-darkTextColor text-center">Experience</h4>
-
-      <!--   line   -->
-      <div class="w-[50%] h-[2px] bg-highlightColor"></div>
-      <div class="w-[70%] h-[3px] bg-highlightPrimary mt-1"></div>
+    <div class="pt-8">
+      <SectionTitle eyebrow="Where I've worked" title="Experience"/>
     </div>
 
     <div class="pt-10 lg:pt-14 grid grid-cols-1 lg:grid-cols-3 gap-[20px]">
-      <div v-for="experience in experienceData" class="lg:first:mt-8 dark:border-darkBorderColor w-full h-max lg:last:mt-8 border border-borderColor rounded-md py-6 px-4 flex gap-[10px]">
+      <div v-for="experience in experienceData" :key="experience.company_name"
+           class="lg:first:mt-8 lg:last:mt-8 w-full h-max border border-borderColor dark:border-darkBorderColor bg-white/50 dark:bg-slate-900/40 hover:border-highlightPrimary/50 dark:hover:border-highlightPrimary/50 hover:shadow-lg hover:shadow-highlightPrimary/5 transition-all duration-300 rounded-xl py-6 px-4 flex gap-[12px]">
 
-        <a :href="experience.website" v-if="experience.company_name === 'freeCodeCamp'" target="_blank" class="min-w-[60px]">
-          <img alt="company/logo" :src="experience.logo" class="w-[45px] h-[45px] mx-auto rounded-2xl"/>
-        </a>
-
-        <a :href="experience.website" v-else target="_blank" class="min-w-[60px]">
-          <img alt="company/logo" :src="experience.logo" class="w-[60px] h-[60px] rounded-2xl"/>
+        <a :href="experience.website" target="_blank" class="min-w-[60px]">
+          <img alt="company/logo" :src="experience.logo"
+               class="w-[60px] h-[60px] rounded-xl border border-borderColor/60 dark:border-darkBorderColor/60 object-cover bg-white"/>
         </a>
 
         <div>
 
-          <h3 class="text-[1.3rem] text-textColor dark:text-darkTextColor font-[500]">{{experience.position}}</h3>
+          <h3 class="font-display text-[1.3rem] text-textColor dark:text-darkTextColor font-[500]">{{experience.position}}</h3>
 
           <p class="flex items-center text-textColor dark:text-darkDisableColor font-[400] gap-[5px] text-[0.9rem]">
             <span>{{experience.company_name}}</span>
@@ -65,7 +60,7 @@ const toggleDescription = (description) => {
           <div class="text-[0.9rem] font-[400] dark:text-darkDisableColor text-disableColor mt-1">
 
             <template v-if="!expandedDescriptions[experience.description]">
-              {{experience.company_name === 'freeCodeCamp' ? experience.description.slice(0, 100) : experience.description.slice(0, 90)}}
+              {{experience.description.slice(0, 90)}}
               <span v-if="experience.description.length > 100" class="text-highlightPrimary/80 underline cursor-pointer ml-1"
                     @click="toggleDescription(experience.description)">
                 See More

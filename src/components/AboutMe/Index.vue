@@ -1,5 +1,6 @@
 <script setup>
 import Layout from "../../Layout.vue";
+import SectionTitle from "../SectionTitle.vue";
 import {ref} from "vue";
 import Education from "../AboutMe/Education.vue"
 import Hobby from "../AboutMe/Hobyy.vue"
@@ -19,13 +20,7 @@ const handleActiveTab = (tab) => {
 
 <template>
   <Layout id="about-me" class="pt-16 lg:pt-8 dark:bg-darkBgColor transition-all duration-500">
-    <div class="w-max mx-auto flex flex-col items-end">
-      <h4 class="text-[2.2rem] font-[600] text-textColor dark:text-darkTextColor text-center">About Me</h4>
-
-      <!--   line   -->
-      <div class="w-[50%] h-[2px] bg-highlightColor"></div>
-      <div class="w-[70%] h-[3px] bg-highlightPrimary mt-1"></div>
-    </div>
+    <SectionTitle eyebrow="Get to know me" title="About Me"/>
 
     <div class="grid grid-cols-1 lg:grid-cols-2 gap-[0px] lg:gap-[25px] pt-10 lg:pt-14 w-full">
 

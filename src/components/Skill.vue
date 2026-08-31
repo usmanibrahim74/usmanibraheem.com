@@ -1,5 +1,6 @@
 <script setup>
 import Layout from "../Layout.vue";
+import SectionTitle from "./SectionTitle.vue";
 import {onMounted, ref, watch} from "vue";
 import {skillsData} from "../Utils/SkillsData.js";
 
@@ -26,18 +27,14 @@ watch(()=> activeTab.value,
 
 <template>
   <Layout id="skills" class="dark:bg-darkBgColor pt-12 lg:pt-5 transition-all duration-500">
-    <div class="w-max mx-auto pt-12 flex flex-col items-end">
-      <h4 class="text-[2.2rem] font-[600] text-textColor dark:text-darkTextColor text-center">Skills</h4>
-
-      <!--   line   -->
-      <div class="w-[50%] h-[2px] bg-highlightColor"></div>
-      <div class="w-[70%] h-[3px] bg-highlightPrimary mt-1"></div>
+    <div class="pt-12">
+      <SectionTitle eyebrow="What I work with" title="Skills"/>
     </div>
 
     <div class="grid mt-12 grid-cols-3 w-[90%] sm:w-[60%] lg:w-[50%] mx-auto relative rounded-full border dark:border-darkTextColor/40 border-borderColor">
 
       <div
-          :class="activeTab === 'front_end' ?'translate-x-[2%]' : activeTab === 'back_end' ? 'translate-x-[105%]' : activeTab === 'framework' ? 'translate-x-[209%]' : 'translate-x-[200%]'" class="bg-highlightPrimary/10 dark:bg-highlightPrimary/50 absolute h-[85%] rounded-full top-[50%] w-[33%] transform transition-all duration-700 translate-y-[-50%]"></div>
+          :class="activeTab === 'front_end' ? 'translate-x-[2%]' : activeTab === 'back_end' ? 'translate-x-[100%]' : 'translate-x-[201.4%]'" class="bg-highlightPrimary/10 dark:bg-highlightPrimary/50 absolute h-[85%] rounded-full top-[50%] w-[33%] transform transition-all duration-700 translate-y-[-50%]"></div>
 
       <button class="py-3.5 px-4 text-center dark:text-darkTextColor text-[1rem] font-[400] transition-all duration-700" :class="activeTab === 'front_end' && 'text-highlightPrimary'" @click="handleActiveTab('front_end')">Front-End</button>
       <button class="py-3.5 px-4 text-center dark:text-darkTextColor text-[1rem] font-[400] transition-all duration-700" :class="activeTab === 'back_end' && 'text-highlightPrimary'" @click="handleActiveTab('back_end')">Back-End</button>
