@@ -2,7 +2,8 @@
 import {styleGuide} from "../Utils/ReusableStyles.js";
 import Layout from "../Layout.vue";
 import {Icon} from "@iconify/vue";
-import {onMounted, onUnmounted, ref} from "vue";
+import {computed, onMounted, onUnmounted, ref} from "vue";
+import {experienceData} from "../Utils/ExperienceData.js";
 
 const props = defineProps({
   theme: {
@@ -10,6 +11,27 @@ const props = defineProps({
     default: ''
   }
 })
+
+const MONTHS = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
+
+const parseStartDate = (str) => {
+  const [monthName, year] = str.split(' ');
+  return new Date(Number(year), MONTHS.indexOf(monthName), 1);
+};
+
+const careerStart = experienceData.reduce((earliest, experience) => {
+  const date = parseStartDate(experience.start_date);
+  return date < earliest ? date : earliest;
+}, new Date());
+
+const yearsOfExperience = computed(() => {
+  const now = new Date();
+  let years = now.getFullYear() - careerStart.getFullYear();
+  const hadAnniversaryThisYear = now.getMonth() > careerStart.getMonth()
+      || (now.getMonth() === careerStart.getMonth() && now.getDate() >= careerStart.getDate());
+  if (!hadAnniversaryThisYear) years--;
+  return years;
+});
 
 const titleText = ref("Full Stack Developer");
 const titleKey = ref(0);
@@ -149,7 +171,7 @@ onUnmounted(() => {
       <!--   experience card   -->
       <div
           class="bg-white dark:bg-slate-900 animation-bounce2 rounded-lg py-1.5 sm:py-2.5 px-4 sm:px-8 absolute shadow-md shadow-highlightColor/5 border border-borderColor/60 dark:border-darkBorderColor/60 bottom-[20px] sm:bottom-[50px] left-0 sm:left-[30px] w-max flex transition-all duration-300 flex-col items-center justify-center z-10">
-        <h6 class="font-display text-[1.2rem] sm:text-[1.8rem] font-[600] text-highlightColor leading-[35px]">6+</h6>
+        <h6 class="font-display text-[1.2rem] sm:text-[1.8rem] font-[600] text-highlightColor leading-[35px]">{{ yearsOfExperience }}+</h6>
         <p class="text-disableColor dark:text-darkDisableColor text-[0.7rem] sm:text-[0.9rem]">Years of experience</p>
       </div>
 

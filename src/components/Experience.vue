@@ -28,7 +28,7 @@ const toggleDescription = (description) => {
 
     <div class="pt-10 lg:pt-14 grid grid-cols-1 lg:grid-cols-3 gap-[20px]">
       <div v-for="experience in experienceData" :key="experience.company_name"
-           class="lg:first:mt-8 lg:last:mt-8 w-full h-max border border-borderColor dark:border-darkBorderColor bg-white/50 dark:bg-slate-900/40 hover:border-highlightPrimary/50 dark:hover:border-highlightPrimary/50 hover:shadow-lg hover:shadow-highlightPrimary/5 transition-all duration-300 rounded-xl py-6 px-4 flex gap-[12px]">
+           class="w-full h-max border border-borderColor dark:border-darkBorderColor bg-white/50 dark:bg-slate-900/40 hover:border-highlightPrimary/50 dark:hover:border-highlightPrimary/50 hover:shadow-lg hover:shadow-highlightPrimary/5 transition-all duration-300 rounded-xl py-6 px-4 flex gap-[12px]">
 
         <a :href="experience.website" target="_blank" class="min-w-[60px]">
           <img alt="company/logo" :src="experience.logo"

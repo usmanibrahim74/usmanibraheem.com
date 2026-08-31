@@ -64,9 +64,9 @@ const socialLinks = [
           <p class="text-[0.8rem] font-[600] uppercase tracking-[0.25em] text-highlightPrimary">Get in touch</p>
           <ul class="mt-4 flex flex-col gap-[12px]">
             <li>
-              <a href="mailto:engr.usmanibraheem@gmail.com" class="flex items-center gap-[10px] text-[0.95rem] text-textColor dark:text-darkDisableColor hover:text-highlightPrimary dark:hover:text-highlightPrimary transition duration-300">
+              <a href="mailto:contact@usmanibraheem.com" class="flex items-center gap-[10px] text-[0.95rem] text-textColor dark:text-darkDisableColor hover:text-highlightPrimary dark:hover:text-highlightPrimary transition duration-300">
                 <Icon icon="hugeicons:mail-01" width="18" height="18" class="shrink-0"/>
-                engr.usmanibraheem@gmail.com
+                contact@usmanibraheem.com
               </a>
             </li>
             <li>

@@ -1,5 +1,29 @@
 export const experienceData = [
     {
+        logo: '/images/companies/givesendgo.com.png',
+        position: 'Full Stack Developer',
+        start_date: 'Aug 2026',
+        end_date: '',
+        jobType: 'full time',
+        website: 'https://www.givesendgo.com/',
+        company_name: 'GiveSendGo',
+        location: 'United States',
+        is_onsite: false,
+        description: 'GiveSendGo is a leading crowdfunding platform where people raise funds for medical, community, and charitable causes with zero platform fees. I work as a Full Stack Developer here, building new features and fixing bugs across the platform.'
+    },
+    {
+        logo: '/images/companies/bosonstudio.com.png',
+        position: 'Co-Founder',
+        start_date: 'Aug 2020',
+        end_date: '',
+        jobType: 'co-founder',
+        website: 'https://bosonstudio.com/',
+        company_name: 'Boson Studio',
+        location: 'Phalia, Pakistan',
+        is_onsite: true,
+        description: 'Boson Studio is a software house I co-founded to deliver practical, high-quality web applications for businesses — from custom platforms like BosonPOS and our Hospital Indoor Management System to client projects. I work across the stack, from architecture and development to client delivery.'
+    },
+    {
         logo: '/images/companies/gloriaforce.com.png',
         position: 'Web Developer',
         start_date: 'Sep 2020',
@@ -15,13 +39,13 @@ export const experienceData = [
         logo: '/images/companies/synergidigital.com.png',
         position: 'Full Stack Developer',
         start_date: 'Dec 2019',
-        end_date: '',
+        end_date: 'Jul 2026',
         jobType: 'freelance',
         company_name: 'Synergi Digital',
         website: 'https://synergidigital.com/',
         location: 'Nottingham, United Kingdom',
         is_onsite: false,
-        description: 'Synergi Digital is a digital marketing agency that provides a range of services including web design, web development, and digital marketing. I work as a full stack developer here. I work on the front end and back end of the website. I also work on the design of the website.'
+        description: 'Synergi Digital is a digital marketing agency that provides a range of services including web design, web development, and digital marketing. I worked as a full stack developer here, on the front end and back end of the website, as well as its design.'
     },
     {
         logo: '/images/companies/uforiainfotech.com.png',
