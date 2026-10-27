@@ -41,14 +41,6 @@ const toggleDescription = (description) => {
 
           <p class="flex items-center text-textColor dark:text-darkDisableColor font-[400] gap-[5px] text-[0.9rem]">
             <span>{{experience.company_name}}</span>
-            <Icon icon="material-symbols-light:circle" width="6" height="6" class="text-gray-400"/>
-            <span class="capitalize">{{experience.jobType}}</span>
-          </p>
-
-          <p class="flex items-center text-disableColor dark:text-darkDisableColor font-[400] text-[0.9rem]">
-            <span>{{experience.start_date}}</span>
-            <Icon icon="material-symbols-light:check-indeterminate-small-rounded" width="24" height="24" class="text-gray-400"/>
-            <span class="capitalize">{{experience.end_date ? experience.end_date : 'present'}}</span>
           </p>
 
           <p class="flex items-center flex-wrap text-disableColor dark:text-darkDisableColor gap-[5px] font-[400] text-[0.9rem]">
