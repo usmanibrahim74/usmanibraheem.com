@@ -1,4 +1,35 @@
-export const projectsData = [
+const allProjects = [
+
+    {
+        slug: 'dukanwise',
+        name: 'dukanwise - POS for Pakistani Shops',
+        summary: 'A point-of-sale and back-office system for retail shops, pharmacies, and multi-branch chains in Pakistan.',
+        thumbnail: '/dukanwise.png',
+        tags: [
+            'VueJS',
+            'tailwind CSS',
+            'laravel',
+            'Astro',
+        ],
+        github: '',
+        live: 'https://dukanwise.com/',
+        content: {
+            intro: 'dukanwise is a multi-tenant point-of-sale and back-office system built by Boson Studio for retail shops, pharmacies, and multi-branch chains in Pakistan. Each business gets its own account and separate database, with billing, udhaar khata, stock, and reports in one app, in both Urdu and English.',
+            highlights: [
+                'A fast sell screen with barcode scanning and keyboard shortcuts, taking cash, card, JazzCash, and Easypaisa, with the receipt printing the moment a sale is saved.',
+                'A digital udhaar khata — every customer\'s purchases, payments, and dues, with reminders and an overdue list.',
+                'Stock with expiry tracking and low-stock alerts, plus stock transfers and combined reports across branches.',
+                'An offline app that keeps the counter selling when the internet drops, and built-in FBR invoicing for tax-registered shops.',
+                'Purchases, expenses, payroll, discounts, roles and permissions, two-step login, and Excel import/export.',
+            ],
+            role: 'I co-founded Boson Studio and build dukanwise across the stack, from the multi-tenant Laravel backend and the POS and back-office interface to the bilingual marketing website.',
+            demo: [
+                {label: 'Demo', value: 'demo.dukanwise.com'},
+                {label: 'Username', value: 'owner'},
+                {label: 'Password', value: 'password'},
+            ]
+        }
+    },
 
     {
         slug: 'tripvlog',
@@ -126,6 +157,7 @@ export const projectsData = [
     },
     {
         slug: 'appforcepro',
+        hidden: true,
         name: 'Appforce Pro - Android TV & Fire TV App',
         summary: 'A premium live TV and media player app for Android TV, Fire TV, and smart TVs.',
         thumbnail: '/appforcepro.png',
@@ -149,6 +181,7 @@ export const projectsData = [
     },
     {
         slug: 'appforceclassic',
+        hidden: true,
         name: 'Appforce Classic - Android TV & Fire TV App',
         summary: 'A stable, no-frills media player app for Android TV and Fire TV Stick.',
         thumbnail: '/appforceclassic.png',
@@ -172,6 +205,7 @@ export const projectsData = [
     },
     {
         slug: 'appforce-control-panel',
+        hidden: true,
         name: 'AppForce Control Panel - Device & Reseller Management',
         summary: 'A multi-tenant control panel for managing every device, license, and reseller across the AppForce apps.',
         thumbnail: '/appforce-control-panel.png',
@@ -195,3 +229,5 @@ export const projectsData = [
         }
     }
 ]
+
+export const projectsData = allProjects.filter((project) => !project.hidden)
