@@ -1,4 +1,4 @@
-const allProjects = [
+export const projectsData = [
 
     {
         slug: 'dukanwise',
@@ -156,78 +156,50 @@ const allProjects = [
         }
     },
     {
-        slug: 'appforcepro',
-        hidden: true,
-        name: 'Appforce Pro - Android TV & Fire TV App',
-        summary: 'A premium live TV and media player app for Android TV, Fire TV, and smart TVs.',
-        thumbnail: '/appforcepro.png',
+        slug: 'tv-media-player-app',
+        name: 'Media Player App for Android TV & Fire TV',
+        summary: 'A big-screen live TV and on-demand media player app for Android TV and Fire TV devices.',
+        thumbnail: '/tv-media-player.png',
         tags: [
             'Android TV',
             'Fire TV',
             'REST API',
         ],
         github: '',
-        live: 'https://appforcepro.com/',
+        live: '',
         content: {
-            intro: 'Appforce Pro is a premium media player app for Android TV, Fire TV Stick, and Samsung and LG smart TVs, giving users a single, big-screen interface to manage and stream from their own IPTV subscriptions.',
+            intro: 'A media player app for Android TV and Fire TV, built for a client, that gives viewers a single, remote-friendly interface for streaming live TV, movies, and series from the playlists they already subscribe to.',
             highlights: [
-                'Supports MAG Stalker Portal, M3U/M3U8 playlists, and the Xtream Codes API, with QR-code scanning to add a playlist straight from a phone.',
-                'Customisable audio and subtitle languages, aspect ratio, and multiple UI themes, plus playlist sorting and group management.',
+                'Support for the common playlist and portal formats, with QR-code scanning to add a playlist from a phone instead of typing long URLs on a remote.',
+                'Customisable audio and subtitle languages, aspect ratio, and UI themes, plus playlist sorting, favourites, and group management.',
                 'Parental controls and app-level password protection to restrict access to selected content.',
-                'Rated 4.9 stars with 10,000+ downloads across its Android TV and Fire TV listings.',
+                'Licensing built in — devices start on a free trial and are activated through the backend control panel.',
             ],
-            role: 'I developed this Android TV and Fire TV app for the client, building the app experience along with the backend control panel and APIs used to manage devices and content.',
+            role: 'I developed this app for the client, building the TV app experience along with the backend control panel and APIs used to manage devices and content.',
         }
     },
     {
-        slug: 'appforceclassic',
-        hidden: true,
-        name: 'Appforce Classic - Android TV & Fire TV App',
-        summary: 'A stable, no-frills media player app for Android TV and Fire TV Stick.',
-        thumbnail: '/appforceclassic.png',
-        tags: [
-            'Android TV',
-            'Fire TV',
-            'REST API',
-        ],
-        github: '',
-        live: 'https://appforceclassic.com/',
-        content: {
-            intro: 'Appforce Classic is a media player app for Android TV and Fire TV Stick (it\'s not available on Android mobile), built as a more straightforward, stability-focused variant alongside Appforce Pro for media service providers and viewers who want dependable on-demand and live TV playback.',
-            highlights: [
-                'Supports MAG Stalker Portal, M3U Playlist, Xtream Codes API, and M3U8 playlists, with QR-code scanning to connect a playlist instead of typing long URLs.',
-                'Customisable streaming mode, audio and subtitle language, and screen aspect ratio.',
-                'Parental controls and app-level password protection to restrict content access.',
-                'Multi-language interface, with a 3-day free trial before a license purchase is required.',
-            ],
-            role: 'I developed this Android TV and Fire TV app for the client, building the app experience along with the backend control panel and APIs used to manage devices and content.',
-        }
-    },
-    {
-        slug: 'appforce-control-panel',
-        hidden: true,
-        name: 'AppForce Control Panel - Device & Reseller Management',
-        summary: 'A multi-tenant control panel for managing every device, license, and reseller across the AppForce apps.',
-        thumbnail: '/appforce-control-panel.png',
+        slug: 'device-licence-control-panel',
+        name: 'Device & Licence Management Control Panel',
+        summary: 'A multi-tenant control panel for managing devices, licences, and resellers behind a family of TV apps.',
+        thumbnail: '/device-control-panel.png',
         tags: [
             'VueJS',
             'Laravel',
             'Stripe',
         ],
         github: '',
-        live: 'https://pro.appforcepro.com/',
+        live: '',
         content: {
-            intro: 'AppForce Control Panel is the multi-tenant backend I built to manage every device that runs the AppForce apps (Appforce Pro, Appforce Classic, and the wider GloriaForce app ecosystem) — from device registration and licensing to reseller management and anti-piracy checks.',
+            intro: 'A multi-tenant backend, built for a client, that manages every device running their TV apps — from device registration and licensing to reseller management and anti-piracy checks.',
             highlights: [
-                'A multi-tenant reseller hierarchy — resellers, sub-resellers, and retailers each get their own portal for managing their own devices and customers.',
-                'Full device lifecycle management: registration, trial/license status, expiry tracking, and the ability to remotely block a device.',
-                'A credit-based licensing system — resellers purchase credit plans and spend credits to activate licenses on devices.',
-                'Anti-piracy tooling, including checksum validation and a tampered-device registry that flags suspicious or modified installs.',
-                'Stripe-powered payments, staged app/OTA updates with beta rollouts, role-based access control, and full activity logs.',
+                'A multi-tenant reseller hierarchy — resellers, sub-resellers, and retailers each get their own portal for their own devices and customers.',
+                'Full device lifecycle management: registration, trial and licence status, expiry tracking, and remotely blocking a device.',
+                'A credit-based licensing system — resellers buy credit plans and spend credits to activate licences on devices.',
+                'Anti-piracy tooling, including checksum validation and a registry that flags modified or suspicious installs.',
+                'Stripe payments, staged app updates with beta rollouts, role-based access control, and full activity logs.',
             ],
-            role: 'I designed and built this platform as the central control panel behind the AppForce apps, handling device and license management, the reseller hierarchy, and the APIs the apps themselves rely on.',
+            role: 'I designed and built this platform as the central control panel behind the client\'s apps, handling device and licence management, the reseller hierarchy, and the APIs the apps rely on.',
         }
     }
 ]
-
-export const projectsData = allProjects.filter((project) => !project.hidden)

@@ -46,7 +46,7 @@ import {styleGuide} from "../Utils/ReusableStyles.js";
               <Icon icon="hugeicons:file-01" width="20" height="20" />
               View Project
             </RouterLink>
-            <a :class="styleGuide.buttonOutline" target="_blank" :href="project.live">
+            <a v-if="project.live" :class="styleGuide.buttonOutline" target="_blank" :href="project.live">
               <Icon icon="hugeicons:link-square-02" width="20" height="20" />
               Live
             </a>

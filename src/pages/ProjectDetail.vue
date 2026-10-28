@@ -133,7 +133,7 @@ useHead(() => {
           </div>
 
           <div class="flex flex-col items-stretch gap-[10px] mt-6">
-            <a :class="styleGuide.buttonFill" target="_blank" :href="project.live">
+            <a v-if="project.live" :class="styleGuide.buttonFill" target="_blank" :href="project.live">
               <Icon icon="hugeicons:link-square-02" width="20" height="20" />
               Live
             </a>

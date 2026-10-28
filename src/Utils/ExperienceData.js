@@ -22,15 +22,15 @@ export const experienceData = [
         description: 'Boson Studio is a software house I co-founded to deliver practical, high-quality web applications for businesses — from custom platforms like BosonPOS and our Hospital Indoor Management System to client projects. I work across the stack, from architecture and development to client delivery.'
     },
     {
-        logo: '/images/companies/gloriaforce.com.png',
+        logo: '',
         position: 'Web Developer',
         start_date: 'Sep 2020',
         end_date: '',
-        website: 'https://gloriaforce.com/appforce-2-android-tv-app/',
-        company_name: 'Gloria Force',
-        location: 'Gütersloh, Germany',
+        website: '',
+        company_name: 'Media-tech company (confidential)',
+        location: 'Germany',
         is_onsite: false,
-        description: 'Gloria Force Appforce II is a premium Android TV app that allows you to watch live TV, movies, and TV shows on your Android TV. I manage the control panel for all the devices and provide apis for the app.'
+        description: 'A media-tech company building live TV and media player apps for Android TV and Fire TV. I manage the control panel for all the devices running their apps and build the APIs the apps rely on.'
     },
     {
         logo: '/images/companies/synergidigital.com.png',

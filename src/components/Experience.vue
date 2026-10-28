@@ -30,10 +30,13 @@ const toggleDescription = (description) => {
       <div v-for="experience in experienceData" :key="experience.company_name"
            class="w-full h-max border border-borderColor dark:border-darkBorderColor bg-white/50 dark:bg-slate-900/40 hover:border-highlightPrimary/50 dark:hover:border-highlightPrimary/50 hover:shadow-lg hover:shadow-highlightPrimary/5 transition-all duration-300 rounded-xl py-6 px-4 flex gap-[12px]">
 
-        <a :href="experience.website" target="_blank" class="min-w-[60px]">
-          <img alt="company/logo" :src="experience.logo"
+        <component :is="experience.website ? 'a' : 'div'" :href="experience.website || undefined" :target="experience.website ? '_blank' : undefined" class="min-w-[60px]">
+          <img v-if="experience.logo" alt="company/logo" :src="experience.logo"
                class="w-[60px] h-[60px] rounded-xl border border-borderColor/60 dark:border-darkBorderColor/60 object-cover bg-white"/>
-        </a>
+          <div v-else class="w-[60px] h-[60px] rounded-xl border border-borderColor/60 dark:border-darkBorderColor/60 bg-white dark:bg-slate-900/40 flex items-center justify-center text-highlightPrimary">
+            <Icon icon="hugeicons:building-03" width="28" height="28"/>
+          </div>
+        </component>
 
         <div>
 
