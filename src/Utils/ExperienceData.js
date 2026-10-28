@@ -1,16 +1,5 @@
 export const experienceData = [
     {
-        logo: '/images/companies/givesendgo.com.png',
-        position: 'Full Stack Developer',
-        start_date: 'Aug 2026',
-        end_date: '',
-        website: 'https://www.givesendgo.com/',
-        company_name: 'GiveSendGo',
-        location: 'United States',
-        is_onsite: false,
-        description: 'GiveSendGo is a leading crowdfunding platform where people raise funds for medical, community, and charitable causes with zero platform fees. I work as a Full Stack Developer here, building new features and fixing bugs across the platform.'
-    },
-    {
         logo: '/images/companies/bosonstudio.com.png',
         position: 'Co-Founder',
         start_date: 'Aug 2020',
@@ -22,15 +11,15 @@ export const experienceData = [
         description: 'Boson Studio is a software house I co-founded to deliver practical, high-quality web applications for businesses — from custom platforms like BosonPOS and our Hospital Indoor Management System to client projects. I work across the stack, from architecture and development to client delivery.'
     },
     {
-        logo: '',
-        position: 'Web Developer',
-        start_date: 'Sep 2020',
+        logo: '/images/companies/givesendgo.com.png',
+        position: 'Full Stack Developer',
+        start_date: 'Aug 2026',
         end_date: '',
-        website: '',
-        company_name: 'Media-tech company (confidential)',
-        location: 'Germany',
+        website: 'https://www.givesendgo.com/',
+        company_name: 'GiveSendGo',
+        location: 'United States',
         is_onsite: false,
-        description: 'A media-tech company building live TV and media player apps for Android TV and Fire TV. I manage the control panel for all the devices running their apps and build the APIs the apps rely on.'
+        description: 'GiveSendGo is a leading crowdfunding platform where people raise funds for medical, community, and charitable causes with zero platform fees. I work as a Full Stack Developer here, building new features and fixing bugs across the platform.'
     },
     {
         logo: '/images/companies/synergidigital.com.png',
@@ -53,5 +42,16 @@ export const experienceData = [
         location: 'Islamabad, Pakistan',
         is_onsite: true,
         description: 'Uforia Infotech is a global digital solutions company, specializing in E-commerce & Web2Print solutions. We provide high quality, cost-effective and reliable software development services that match your specific needs, budget and timeframe. Our current project portfolio contains a mix of software solutions for both B2B and B2C businesses.'
+    },
+    {
+        logo: '',
+        position: 'Web Developer',
+        start_date: 'Sep 2020',
+        end_date: '',
+        website: '',
+        company_name: 'Media-tech company (confidential)',
+        location: 'Germany',
+        is_onsite: false,
+        description: 'A media-tech company building live TV and media player apps for Android TV and Fire TV. I manage the control panel for all the devices running their apps and build the APIs the apps rely on.'
     }
 ]
